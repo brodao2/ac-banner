@@ -4,13 +4,13 @@
 
 Create ASCII Art banners in CLI applications or VS-Code extensions
 
-## Usage
+## Installation
 
 ```console
 npm install ac-banner
 ```
 
-## Class Data
+## Usage with data class
 
 ```ts
     const data: TDataBanner = new TDataBanner();
@@ -35,7 +35,7 @@ Output:
       '----------------------------------^---------------------'
 ```
 
-## VS-Code Extension or JSON data
+## Usage with VS-Code Extension or JSON data
 
 ```ts
     const ext: any = vscode.extensions.getExtension("brodao2.ac-banner");
