@@ -1,3 +1,7 @@
 {
-    "jest.runMode": "on-demand"
+    "jest.coverageFormatter": "GutterFormatter",
+    "jest.runMode": {
+        "type": "on-demand",
+        "coverage": true
+    }
 }

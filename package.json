@@ -1,14 +1,15 @@
 {
-  "name": "ac-banner",
+  "name": "@brodao/ac-banner",
   "version": "0.0.1",
   "description": "Create ASCII art banners for use in CLI applications or VS-Code extensions.",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "--COMPILE--": "",
     "compile": "tsc",
     "watch": "tsc -w",
     "--TEST--": "",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "pretest": "npm run compile",
     "--MISC--": "",
     "format:check": "prettier --check *.ts",
@@ -18,7 +19,7 @@
     "all-contributors:check": "npx -y all-contributors check"
   },
   "files": [
-    "src"
+    "dist/src"
   ],
   "repository": {
     "type": "git",

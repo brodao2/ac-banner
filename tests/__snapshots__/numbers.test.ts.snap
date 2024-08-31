@@ -1,0 +1,433 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 1`] = `
+[
+  "-------v---------------------",
+  "  11   | AC Banner",
+  " 111   | 1.0.0",
+  "  11   | ",
+  "  11   | Alan Cândido",
+  " 11l1  | brodao@gmail.com",
+  "-------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 2`] = `
+[
+  "--------v---------------------",
+  "   22   | AC Banner",
+  "  2  2  | 1.0.0",
+  "    2   | ",
+  "   2    | Alan Cândido",
+  "  2222  | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 3`] = `
+[
+  "-------v---------------------",
+  " 333   | AC Banner",
+  "    3  | 1.0.0",
+  "  33   | ",
+  "    3  | Alan Cândido",
+  " 333   | brodao@gmail.com",
+  "-------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 4`] = `
+[
+  "--------v---------------------",
+  "  4  4  | AC Banner",
+  "  4  4  | 1.0.0",
+  "  4444  | ",
+  "     4  | Alan Cândido",
+  "     4  | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 5`] = `
+[
+  "-------v---------------------",
+  " 555   | AC Banner",
+  " 5     | 1.0.0",
+  " 555   | ",
+  "    5  | Alan Cândido",
+  " 555   | brodao@gmail.com",
+  "-------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 6`] = `
+[
+  "--------v---------------------",
+  "   6    | AC Banner",
+  "  6     | 1.0.0",
+  " 6666   | ",
+  " 6   6  | Alan Cândido",
+  "  666   | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 7`] = `
+[
+  "--------v---------------------",
+  " 77777  | AC Banner",
+  "    7   | 1.0.0",
+  "   7    | ",
+  "   7    | Alan Cândido",
+  "   7    | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 8`] = `
+[
+  "--------v---------------------",
+  "  888   | AC Banner",
+  " 8   8  | 1.0.0",
+  "  888   | ",
+  " 8   8  | Alan Cândido",
+  "  888   | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 9`] = `
+[
+  "--------v---------------------",
+  "  9999  | AC Banner",
+  " 9   9  | 1.0.0",
+  "  9999  | ",
+  "    9   | Alan Cândido",
+  "   9    | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 10`] = `
+[
+  "--------v---------------------",
+  "  000   | AC Banner",
+  " 0   0  | 1.0.0",
+  " 0   0  | ",
+  " 0   0  | Alan Cândido",
+  "  000   | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 11`] = `
+[
+  "-------v---------------------",
+  "       | AC Banner",
+  "       | 1.0.0",
+  " ----  | ",
+  "       | Alan Cândido",
+  "       | brodao@gmail.com",
+  "-------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 12`] = `
+[
+  "--------v---------------------",
+  " * * *  | AC Banner",
+  "  ***   | 1.0.0",
+  " *****  | ",
+  "  ***   | Alan Cândido",
+  " * * *  | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 13`] = `
+[
+  "--------v---------------------",
+  "   ██╗  | AC Banner",
+  "  ███║  | 1.0.0",
+  "  ╚██║  | ",
+  "   ██║  | Alan Cândido",
+  "   ██║  | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 14`] = `
+[
+  "------------v---------------------",
+  "  ██████╗   | AC Banner",
+  "  ╚════██╗  | 1.0.0",
+  "   █████╔╝  | ",
+  "  ██╔═══╝   | Alan Cândido",
+  "  ███████╗  | brodao@gmail.com",
+  "------------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 15`] = `
+[
+  "------------v---------------------",
+  "  ██████╗   | AC Banner",
+  "  ╚════██╗  | 1.0.0",
+  "   █████╔╝  | ",
+  "   ╚═══██╗  | Alan Cândido",
+  "  ██████╔╝  | brodao@gmail.com",
+  "------------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 16`] = `
+[
+  "------------v---------------------",
+  "  ██╗  ██╗  | AC Banner",
+  "  ██║  ██║  | 1.0.0",
+  "  ███████║  | ",
+  "  ╚════██║  | Alan Cândido",
+  "       ██║  | brodao@gmail.com",
+  "------------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 17`] = `
+[
+  "------------v---------------------",
+  "  ███████╗  | AC Banner",
+  "  ██╔════╝  | 1.0.0",
+  "  ███████╗  | ",
+  "  ╚════██║  | Alan Cândido",
+  "  ███████║  | brodao@gmail.com",
+  "------------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 18`] = `
+[
+  "------------v---------------------",
+  "  ██████╗   | AC Banner",
+  " ██╔════╝   | 1.0.0",
+  " ███████╗   | ",
+  " ██╔═══██╗  | Alan Cândido",
+  " ╚██████╔╝  | brodao@gmail.com",
+  "------------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 19`] = `
+[
+  "-----------v---------------------",
+  " ███████╗  | AC Banner",
+  " ╚════██║  | 1.0.0",
+  "     ██╔╝  | ",
+  "    ██╔╝   | Alan Cândido",
+  "    ██║    | brodao@gmail.com",
+  "-----------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 20`] = `
+[
+  "-----------v---------------------",
+  "  █████╗   | AC Banner",
+  " ██╔══██╗  | 1.0.0",
+  " ╚█████╔╝  | ",
+  " ██╔══██╗  | Alan Cândido",
+  " ╚█████╔╝  | brodao@gmail.com",
+  "-----------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 21`] = `
+[
+  "-----------v---------------------",
+  "  █████╗   | AC Banner",
+  " ██╔══██╗  | 1.0.0",
+  " ╚██████║  | ",
+  "  ╚═══██║  | Alan Cândido",
+  "  █████╔╝  | brodao@gmail.com",
+  "-----------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 22`] = `
+[
+  "------------v---------------------",
+  "  ██████╗   | AC Banner",
+  " ██╔═████╗  | 1.0.0",
+  " ██║██╔██║  | ",
+  " ████╔╝██║  | Alan Cândido",
+  " ╚██████╔╝  | brodao@gmail.com",
+  "------------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 23`] = `
+[
+  "---------v---------------------",
+  "         | AC Banner",
+  "         | 1.0.0",
+  " █████╗  | ",
+  " ╚════╝  | Alan Cândido",
+  "         | brodao@gmail.com",
+  "---------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 24`] = `
+[
+  "---------v---------------------",
+  "         | AC Banner",
+  " ▄ ██╗▄  | 1.0.0",
+  "  ████╗  | ",
+  " ▀╚██╔▀  | Alan Cândido",
+  "   ╚═╝   | brodao@gmail.com",
+  "---------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 25`] = `
+[
+  "---------v---------------------",
+  "  ///    | AC Banner",
+  " / //    | 1.0.0",
+  "   //    | ",
+  "   //    | Alan Cândido",
+  " //////  | brodao@gmail.com",
+  "---------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 26`] = `
+[
+  "----------v---------------------",
+  " ///////  | AC Banner",
+  "      //  | 1.0.0",
+  " ///////  | ",
+  " //       | Alan Cândido",
+  " ///////  | brodao@gmail.com",
+  "----------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 27`] = `
+[
+  "-----------v---------------------",
+  " //////    | AC Banner",
+  "       //  | 1.0.0",
+  "  /////    | ",
+  "       //  | Alan Cândido",
+  " //////    | brodao@gmail.com",
+  "-----------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 28`] = `
+[
+  "----------v---------------------",
+  " //   //  | AC Banner",
+  " //   //  | 1.0.0",
+  " ///////  | ",
+  "      //  | Alan Cândido",
+  "      //  | brodao@gmail.com",
+  "----------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 29`] = `
+[
+  "-----------v---------------------",
+  " ////////  | AC Banner",
+  " //        | 1.0.0",
+  " ////////  | ",
+  "       //  | Alan Cândido",
+  " ////////  | brodao@gmail.com",
+  "-----------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 30`] = `
+[
+  "-----------v---------------------",
+  "  /////    | AC Banner",
+  " //        | 1.0.0",
+  " ///////   | ",
+  " //    //  | Alan Cândido",
+  "  //////   | brodao@gmail.com",
+  "-----------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 31`] = `
+[
+  "---------v---------------------",
+  " //////  | AC Banner",
+  "     //  | 1.0.0",
+  "    //   | ",
+  "   //    | Alan Cândido",
+  "  //     | brodao@gmail.com",
+  "---------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 32`] = `
+[
+  "----------v---------------------",
+  " ///////  | AC Banner",
+  " //   //  | 1.0.0",
+  " ///////  | ",
+  " //   //  | Alan Cândido",
+  " ///////  | brodao@gmail.com",
+  "----------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 33`] = `
+[
+  "------------v---------------------",
+  "  ////////  | AC Banner",
+  "  //    //  | 1.0.0",
+  "  ////////  | ",
+  "        //  | Alan Cândido",
+  "  ////////  | brodao@gmail.com",
+  "------------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 34`] = `
+[
+  "------------v---------------------",
+  "  ///////   | AC Banner",
+  " //   ////  | 1.0.0",
+  " // //  //  | ",
+  " ///    //  | Alan Cândido",
+  "  //////    | brodao@gmail.com",
+  "------------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 35`] = `
+[
+  "--------v---------------------",
+  "        | AC Banner",
+  "        | 1.0.0",
+  " /////  | ",
+  "        | Alan Cândido",
+  "        | brodao@gmail.com",
+  "--------^---------------------",
+]
+`;
+
+exports[`AC Banner: test build all supported numbers should build the banner with all numbers in all fonts 36`] = `
+[
+  "-------------v---------------------",
+  " //  //  //  | AC Banner",
+  "   //  //    | 1.0.0",
+  " //////////  | ",
+  "   //  //    | Alan Cândido",
+  " //  //  //  | brodao@gmail.com",
+  "-------------^---------------------",
+]
+`;

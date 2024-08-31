@@ -15,6 +15,7 @@
 [![GitHub License](https://img.shields.io/github/license/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/issues)
 [![GitHub forks](https://img.shields.io/github/forks/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/network)
+[![codecov](https://codecov.io/gh/brodao2/act-banner/branch/master/graph/badge.svg)]
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
