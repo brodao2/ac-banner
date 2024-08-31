@@ -28,8 +28,12 @@ export class TDataBanner {
 }
 
 /**
- * Shows a welcome banner.
- * The banner contains the extension name, version, info, and link to the repo.
+ * Builds a banner string array from the provided title and data.
+ *
+ * @param title - The title to be displayed in the banner.
+ * @param data - The data to be displayed in the banner. Can be a `TDataBanner` object or a plain object with the required properties.
+ * @param options - Optional options for building the title.
+ * @returns An array of strings representing the banner.
  */
 export function buildBanner(title: string, data: TDataBanner | {}, options?: TBuildTitleOptions): string[] {
   const dataBanner: TDataBanner = normalizeData(data);

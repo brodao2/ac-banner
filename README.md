@@ -1,43 +1,76 @@
-<p align="center">
- <img src="https://i.imgur.com/9CVBorr.png" alt="ac-banner">
-</p>
+# AC Banner
 
 [![Build Status](https://travis-ci.com/brodao2/ac-banner.svg?branch=master)](https://travis-ci.com/brodao2/ac-banner)
 
-Easily integrate ASCII flavoured banner to your CLI utility.
+Create ASCII Art banners in CLI applications or VS-Code extensions
 
 ## Usage
 
-```md
-npm install --save ac-banner
+```console
+npm install ac-banner
 ```
 
-```js
-const showBanner = require('ac-banner');
+## Class Data
 
-(async () => {
- await showBanner('The Title', 'This is a suitable tagline');
-})();
+```ts
+    const data: TDataBanner = new TDataBanner();
+    data.displayName = "AC Banner";
+    data.version = "1.0.0";
+    data.authorName = "Alan Cândido";
+    data.authorEmail = "brodao@gmail.com";
 
+    const banner: string[] = buildBanner("Test", data);
+    console.log(banner.join('\n'));
 ```
 
-![Demo](https://i.imgur.com/btVf53N.png)
+Output:
+
+```console
+      '----------------------------------v---------------------',
+      ' //////  ///////  //////  //////  | AC Banner',
+      '   //    //       //        //    | 1.0.0',
+      '   //    /////    //////    //    | ',
+      '   //    //           //    //    | Alan Cândido',
+      '   //    ///////  //////    //    | brodao@gmail.com',
+      '----------------------------------^---------------------'
+```
+
+## VS-Code Extension or JSON data
+
+```ts
+    const ext: any = vscode.extensions.getExtension("brodao2.ac-banner");
+    const banner: string[] = buildBanner("Test", ext.packageJSON);
+    console.log(banner.join('\n'));
+```
+
+Output:
+
+```console
+      '----------------------------------v---------------------',
+      ' //////  ///////  //////  //////  | AC Banner',
+      '   //    //       //        //    | 1.0.0',
+      '   //    /////    //////    //    | ',
+      '   //    //           //    //    | Alan Cândido',
+      '   //    ///////  //////    //    | brodao@gmail.com',
+      '----------------------------------^---------------------'
+```
 
 ## API
 
-### showBanner(title, tagLine?, titleColor?, tagLineColor?)
-
-- `title`: Name of the utility.
-- `tagLine`: A suitable tagline.
-- `titleColor`: Override the default title-color that defaults to `red`.
-- `tagLineColor`: Override the default tagline-color that defaults to `yellow`.
+```ts
+/**
+* Builds a banner string array from the provided title and data.
+*
+* @param title - The title to be displayed in the banner.
+* @param data - The data to be displayed in the banner. Can be a `TDataBanner` object or a plain object with the required properties.
+* @param options - Optional options for building the title.
+* @returns An array of strings representing the banner.
+ */
+export function buildBanner(title: string, data: TDataBanner | {}, options?: TBuildTitleOptions): string[] {
+```
 
 ## Testing
 
 ```bash
- npm test
+ npm run test
 ```
-
-## License
-
-[GNU GPL V3](https://github.com/brodao2/ac-banner/blob/master/LICENSE)
