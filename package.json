@@ -1,8 +1,8 @@
 {
   "name": "ac-banner",
-  "version": "1.0.0",
-  "description": "Create ASCII Art banners in CLI applications or VS-Code extensions",
-  "main": "out/index.js",
+  "version": "0.0.1",
+  "description": "Create ASCII art banners for use in CLI applications or VS-Code extensions.",
+  "main": "dist/index.js",
   "scripts": {
     "--COMPILE--": "",
     "compile": "tsc",
@@ -12,11 +12,12 @@
     "pretest": "npm run compile",
     "--MISC--": "",
     "format:check": "prettier --check *.ts",
-    "format": "prettier --write *.ts"
+    "format": "prettier --write *.ts",
+    "---MISC---": "",
+    "all-contributors:generate": "npx -y all-contributors generate",
+    "all-contributors:check": "npx -y all-contributors check"
   },
   "files": [
-    "index.ts",
-    "index.d.ts",
     "src"
   ],
   "repository": {
