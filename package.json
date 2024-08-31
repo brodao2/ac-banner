@@ -1,0 +1,54 @@
+{
+  "name": "ac-banner",
+  "version": "1.0.0",
+  "description": "Create ASCII Art banners in CLI applications or VS-Code extensions",
+  "main": "out/index.js",
+  "scripts": {
+    "--COMPILE--": "",
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "--TEST--": "",
+    "test": "jest",
+    "pretest": "npm run compile",
+    "--MISC--": "",
+    "format:check": "prettier --check *.ts",
+    "format": "prettier --write *.ts"
+  },
+  "files": [
+    "index.ts",
+    "index.d.ts",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brodao2/ac-banner.git"
+  },
+  "keywords": [
+    "banner",
+    "nodejs",
+    "ascii",
+    "art",
+    "typescript",
+    "vscode",
+    "CLI"
+  ],
+  "author": {
+    "name": "Alan Cândido",
+    "email": "brodao@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/brodao2/ac-banner/issues"
+  },
+  "homepage": "https://github.com/brodao2/ac-banner#readme",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "types": "./dist/index.d.ts"
+}
