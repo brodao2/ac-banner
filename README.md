@@ -10,7 +10,7 @@
 <!-- prettier-ignore-start -->
 [![GitHub Stars](https://img.shields.io/github/stars/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/stargazers)
 ![GitHub Top Language](https://img.shields.io/github/languages/top/brodao2/ac-banner)
-![GitHub Workflow Status](https://github.com/github/docs/actions/workflows/ci.yml/badge.svg)
+![GitHub Workflow Status](https://github.com/brodao2/ac-banner/actions/workflows/ci.yml/badge.svg)
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/brodao2/ac-banner)
 [![GitHub License](https://img.shields.io/github/license/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/issues)
