@@ -22,17 +22,17 @@
 <!-- markdownlint-enabled -->
 <!-- prettier-ignore-end -->
 
-[English](./README-us.md)
+[Português](./README.md)
 
-Crie faixas de arte ASCII para uso em aplicativos CLI ou extensões VS-Code.
+Create ASCII art banners for use in CLI applications or VS-Code extensions.
 
-## Instalação
+## Installation
 
 ```console
 npm install ac-banner
 ```
 
-## Uso com classe de dados
+## Usage with data class
 
 ```ts
     const data: TDataBanner = new TDataBanner();
@@ -45,7 +45,7 @@ npm install ac-banner
     console.log(banner.join('\n'));
 ```
 
-Saída:
+Output:
 
 ```console
       '----------------------------------v---------------------',
@@ -57,7 +57,7 @@ Saída:
       '----------------------------------^---------------------'
 ```
 
-## Uso com extensão **VS-Code** or dado em formato JSON
+## Use with **VS-Code** extension or data in JSON format
 
 ```ts
     const ext: any = vscode.extensions.getExtension("brodao2.ac-banner");
@@ -65,7 +65,7 @@ Saída:
     console.log(banner.join('\n'));
 ```
 
-Saída:
+Output:
 
 ```console
       '----------------------------------v---------------------',
@@ -104,5 +104,4 @@ export function buildBanner(title: string, data: TDataBanner | {}, options?: TBu
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
