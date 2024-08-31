@@ -8,12 +8,11 @@
 ![Visual Studio Marketplace Last Updated](https://img.shields.io/visual-studio-marketplace/last-updated/brodao.ac-banner)
 -->
 
-<!-- prettier-ignore-start -->
-[![GitHub stars](https://img.shields.io/github/stars/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/stargazers)
-![GitHub top language](https://img.shields.io/github/languages/top/brodao2/ac-banner)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brodao2/ac-banner/Deploy%20Extension)
-![GitHub last commit](https://img.shields.io/github/last-commit/brodao2/ac-banner)
-[![GitHub license](https://img.shields.io/github/license/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/blob/master/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/stargazers)
+![GitHub Top Language](https://img.shields.io/github/languages/top/brodao2/ac-banner)
+![GitHub Workflow Status](https://github.com/github/docs/actions/workflows/ci.yml/badge.svg)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/brodao2/ac-banner)
+[![GitHub License](https://img.shields.io/github/license/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/issues)
 [![GitHub forks](https://img.shields.io/github/forks/brodao2/ac-banner?style=plastic)](https://github.com/brodao2/ac-banner/network)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
