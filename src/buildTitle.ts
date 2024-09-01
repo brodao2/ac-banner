@@ -14,25 +14,65 @@ Copyright [2024] [Alan Cândido (brodao@gmail.com)]
    limitations under the License.
 */
 
+import { alphabet } from "./font/alphabet";
+import { ansiWithShadow } from "./font/ansiWithShadow";
+import { bar } from "./font/bar";
+
+export type TFrameOptions = {
+    _leftTop: string;
+    _top: string;
+    _middleTop: string;
+    _rightTop: string;
+    left: string;
+    _middle: string;
+    right: string;
+    rightBottom: string;
+    bottom: string;
+    leftBottom: string;
+    middleBottom: string;
+    //middleLeft: string;
+    //middleRight: string;
+}
+
 export type TBuildTitleOptions = {
     font?: "alphabet" | "ansi-with-shadow" | "bar";
-    negative?: boolean;
     italic?: boolean;
     background?: string;
     train?: boolean;
     separator?: string;
+    frame?: boolean | TFrameOptions;
 }
 
 export function buildTitle(title: string, options: TBuildTitleOptions = {}): string[] {
-    const font: Record<string, string[]> = getFont(options.font || "bar");
-    const lines: string[] = new Array(font["A"].length).fill("");
+    const font: Record<string, string[]> = getFont(options.font);
+    let lines: string[] = new Array(font["A"].length).fill("");
     title = title.toUpperCase();
 
     for (let index = 0; index < title.length; index++) {
         const char: string[] = font[title.at(index)] || font[" "];
 
         char.forEach((part: string, index: number) => {
-            lines[index] += part + (options.separator || "");
+            lines[index] += part + (options.separator);
+        });
+    }
+
+    if (options.italic) {
+        let spc: string[] = new Array(lines.length).fill("");
+        spc.forEach((part: string, index: number) => {
+            spc[index] = " ".repeat(lines.length - index - 1);
+        });
+
+        lines = lines.map((line: string, index: number) => {
+            return `${spc[index]}${line}${spc[lines.length - index - 1]}`;
+        });
+
+    }
+
+    if (options.background && (options.background !== " ")) {
+        lines = lines.map((line: string) => {
+            return line.replace(/[0-9A-Z /]/g, (match: string) => {
+                return match == " " ? options.background : match;
+            });
         });
     }
 
@@ -43,20 +83,20 @@ function getFont(fontName: string): Record<string, string[]> {
     let data: {};
 
     if (fontName == "alphabet") {
-        data = buildFont(alphabet());
+        data = buildFont(alphabet(), 6);
     } else if (fontName == "ansi-with-shadow") {
-        data = buildFont(ansiWithShadow());
+        data = buildFont(ansiWithShadow(), 7);
     } else if (fontName == "bar") {
-        data = buildFont(bar());
+        data = buildFont(bar(), 6);
     } else {
         throw new Error(`Font ${fontName} not found. Use one of: alphabet, ansi-with-shadow, bar`);
     }
-
+    
     return data;
 }
 
-function buildFont(data: string): Record<string, string[]> {
-    let lines: string[] = data.split("\n").slice(1, 7);
+function buildFont(data: string, heightFont: number): Record<string, string[]> {
+    let lines: string[] = data.split("\n").slice(1, heightFont + 1);
     let symbols: string[] = [];
     let result: Record<string, string[]> = {};
     let spaceWidth: number = 0;
@@ -64,8 +104,8 @@ function buildFont(data: string): Record<string, string[]> {
     lines[0].split("|").forEach((part: string, index: number) => {
         part = part.trim();
         if (part.length !== 0) {
-            symbols.push(part);
-            result[part] = new Array(lines.length).fill("");
+            symbols.push(part.trim());
+            result[part] = new Array(lines.length - 1).fill("");
         }
     });
     lines = lines.slice(1, lines.length);
@@ -82,38 +122,3 @@ function buildFont(data: string): Record<string, string[]> {
     result[" "] = new Array(lines.length).fill(" ".repeat(spaceWidth));
     return result;
 }
-
-function alphabet(): string {
-    return `
-| A    | B     | C    | D    | E    | F    | G     | H    | I   | J     | K    | L    | M     | N     | O     | P     | Q     | R     | S     | T      | U     | V       | W       |X     | Y      | Z     | 0     | 1    | 2     | 3    | 4     | 5    | 6     | 7     | 8     | 9     | -    | *     |
-|  AA  | BBBB  |  CCC | DDD  | EEEE | FFFF |  GGG  | H  H | III |     J | K  K | L    | M   M | N   N |  OOO  | PPPP  |  QQQ  | RRRR  |  SSS  | TTTTTT | U   U | V     V | W     W |X   X | Y   Y  | ZZZZZ |  000  |  11  |   22  | 333  |  4  4 | 555  |   6   | 77777 |  888  |  9999 |      | * * * |
-| A  A | B   B | C    | D  D | E    | F    | G     | H  H |  I  |     J | K K  | L    | MM MM | NN  N | O   O | P   P | Q   Q | R   R | S     |   TT   | U   U | V     V | W     W | X X  |  Y Y   |    Z  | 0   0 | 111  |  2  2 |    3 |  4  4 | 5    |  6    |    7  | 8   8 | 9   9 |      |  ***  |
-| AAAA | BBBB  | C    | D  D | EEE  | FFF  | G  GG | HHHH |  I  |     J | KK   | L    | M M M | N N N | O   O | PPPP  | Q   Q | RRRR  |  SSS  |   TT   | U   U |  V   V  | W  W  W |  X   |   Y    |   Z   | 0   0 |  11  |    2  |  33  |  4444 | 555  | 6666  |   7   |  888  |  9999 | ---- | ***** |
-| A  A | B   B | C    | D  D | E    | F    | G   G | H  H |  I  | J   J | K K  | L    | M   M | N  NN | O   O | P     | QQ  Q | R R   |     S |   TT   | U   U |   V V   |  W W W  | X X  |   Y    |  Z    | 0   0 |  11  |   2   |    3 |     4 |    5 | 6   6 |   7   | 8   8 |    9  |      |  ***  |
-| A  A | BBBB  |  CCC | DDD  | EEEE | F    |  GGG  | H  H | III |  JJJ  | K  K | LLLL | M   M | N   N |  OOO  | P     |  QQQQ | R  RR | SSSS  |   TT   |  UUU  |    V    |   W W   |X   X |   Y    | ZZZZZ |  000  | 11l1 |  2222 | 333  |     4 | 555  |  666  |   7   |  888  |   9   |      | * * * |
-`
-}
-
-function ansiWithShadow(): string {
-    return `
-| A        | B        | C        | D        | E        | F        | G         | H        | I   | J        | K        | L        | M           | N          | O         | P        | Q         | R        | S        | T         | U         | V         | W          | X          | Y         | Z        | 0         | 1     | 2         | 3         | 4         | 5         | 6         | 7        | 8        | 9        | -      | *      |
-|  █████╗  | ██████╗  |  ██████╗ | ██████╗  | ███████╗ | ███████╗ |  ██████╗  | ██╗  ██╗ | ██╗ |      ██╗ | ██╗  ██╗ | ██╗      | ███╗   ███╗ | ███╗   ██╗ |  ██████╗  | ██████╗  |  ██████╗  | ██████╗  | ███████╗ | ████████╗ | ██╗   ██╗ | ██╗   ██╗ | ██╗    ██╗ |  ██╗  ██╗  | ██╗   ██╗ | ███████╗ |  ██████╗  |   ██╗ |  ██████╗  |  ██████╗  |  ██╗  ██╗ |  ███████╗ |  ██████╗  | ███████╗ |  █████╗  |  █████╗  |        |        |
-| ██╔══██╗ | ██╔══██╗ | ██╔════╝ | ██╔══██╗ | ██╔════╝ | ██╔════╝ | ██╔════╝  | ██║  ██║ | ██║ |      ██║ | ██║ ██╔╝ | ██║      | ████╗ ████║ | ████╗  ██║ | ██╔═══██╗ | ██╔══██╗ | ██╔═══██╗ | ██╔══██╗ | ██╔════╝ | ╚══██╔══╝ | ██║   ██║ | ██║   ██║ | ██║    ██║ |  ╚██╗██╔╝  | ╚██╗ ██╔╝ | ╚══███╔╝ | ██╔═████╗ |  ███║ |  ╚════██╗ |  ╚════██╗ |  ██║  ██║ |  ██╔════╝ | ██╔════╝  | ╚════██║ | ██╔══██╗ | ██╔══██╗ |        | ▄ ██╗▄ |
-| ███████║ | ██████╔╝ | ██║      | ██║  ██║ | █████╗   | █████╗   | ██║  ███╗ | ███████║ | ██║ |      ██║ | █████╔╝  | ██║      | ██╔████╔██║ | ██╔██╗ ██║ | ██║   ██║ | ██████╔╝ | ██║   ██║ | ██████╔╝ | ███████╗ |    ██║    | ██║   ██║ | ██║   ██║ | ██║ █╗ ██║ |   ╚███╔╝   |  ╚████╔╝  |   ███╔╝  | ██║██╔██║ |  ╚██║ |   █████╔╝ |   █████╔╝ |  ███████║ |  ███████╗ | ███████╗  |     ██╔╝ | ╚█████╔╝ | ╚██████║ | █████╗ |  ████╗ |
-| ██╔══██║ | ██╔══██╗ | ██║      | ██║  ██║ | ██╔══╝   | ██╔══╝   | ██║   ██║ | ██╔══██║ | ██║ | ██   ██║ | ██╔═██╗  | ██║      | ██║╚██╔╝██║ | ██║╚██╗██║ | ██║   ██║ | ██╔═══╝  | ██║▄▄ ██║ | ██╔══██╗ | ╚════██║ |    ██║    | ██║   ██║ | ╚██╗ ██╔╝ | ██║███╗██║ |   ██╔██╗   |   ╚██╔╝   |  ███╔╝   | ████╔╝██║ |   ██║ |  ██╔═══╝  |   ╚═══██╗ |  ╚════██║ |  ╚════██║ | ██╔═══██╗ |    ██╔╝  | ██╔══██╗ |  ╚═══██║ | ╚════╝ | ▀╚██╔▀ |
-| ██║  ██║ | ██████╔╝ | ╚██████╗ | ██████╔╝ | ███████╗ | ██║      | ╚██████╔╝ | ██║  ██║ | ██║ | ╚█████╔╝ | ██║  ██╗ | ███████╗ | ██║ ╚═╝ ██║ | ██║ ╚████║ | ╚██████╔╝ | ██║      | ╚██████╔╝ | ██║  ██║ | ███████║ |    ██║    | ╚██████╔╝ |  ╚████╔╝  | ╚███╔███╔╝ |  ██╔╝ ██╗  |    ██║    | ███████╗ | ╚██████╔╝ |   ██║ |  ███████╗ |  ██████╔╝ |       ██║ |  ███████║ | ╚██████╔╝ |    ██║   | ╚█████╔╝ |  █████╔╝ |        |   ╚═╝  |
-| ╚═╝  ╚═╝ | ╚═════╝  |  ╚═════╝ | ╚═════╝  | ╚══════╝ | ╚═╝      |  ╚═════╝  | ╚═╝  ╚═╝ | ╚═╝ |  ╚════╝  | ╚═╝  ╚═╝ | ╚══════╝ | ╚═╝     ╚═╝ | ╚═╝  ╚═══╝ |  ╚═════╝  | ╚═╝      |  ╚══▀▀═╝  | ╚═╝  ╚═╝ | ╚══════╝ |    ╚═╝    |  ╚═════╝  |   ╚═══╝   |  ╚══╝╚══╝  |  ╚═╝  ╚═╝  |    ╚═╝    | ╚══════╝ |  ╚═════╝  |   ╚═╝ |  ╚══════╝ |  ╚═════╝  |      ╚═╝  | ╚══════╝  | ╚═════╝   |   ╚═╝    | ╚════╝   | ╚════╝   |        |        |
-`;
-}
-
-function bar(): string {
-    return `
-| A       | B       | C      | D        | E       | F       | G         | H       | I  | J       | K        | L       | M           | N         | O        | P       | Q         | R       | S      | T      | U        | V         | W           | X          | Y        | Z      | 0         | 1      | 2       | 3        | 4       | 5        | 6        | 7      | 8       | 9         | -     | *          |
-| /////// | //////  | ////// | //////   | /////// | /////// |  //////   | //   // | // |      // | //    // | //      | ///     /// | ///    // |  //////  | //////  |  //////   | //////  | ////// | ////// | //    // | //     // | //       // | //      // | //    // | ////// |  ///////  |  ///   | /////// | //////   | //   // | //////// |  /////   | ////// | /////// |  //////// |       | //  //  // |     |
-| //   // | //   // | //     | //    // | //      | //      | //        | //   // | // |      // | //   //  | //      | ////   //// | ////   // | //    // | //   // | //     // | //   // | //     |   //   | //    // | //     // | //       // |   //  //   |  //   // |    //  | //   //// | / //   |      // |       // | //   // | //       | //       |     // | //   // |  //    // |       |   //  //   |              
-| /////// | //////  | //     | //    // | /////   | /////   | //    /// | /////// | // |      // | /////    | //      | //  //// // | // //  // | //    // | //////  | //  /  // | //////  | ////// |   //   | //    // | //     // | //   /   // |    ///     |   ////   |   //   | // //  // |   //   | /////// |  /////   | /////// | //////// | ///////  |    //  | /////// |  //////// | ///// | ////////// |
-| //   // | //   // | //     | //    // | //      | //      | //     // | //   // | // | //   // | //   //  | //      | //    // // | //  // // | //    // | //      | // //  // | //   // |     // |   //   | //    // |   //   // | //  ///  // |  //  //    |    //    |  //    | ///    // |   //   | //      |       // |      // |       // | //    // |   //   | //   // |        // |       |   //  //   |
-| //   // | //////  | ////// | //////   | /////// | //      |  ///////  | //   // | // |   ///// | //    // | /////// | //       // | //   //// |  //////  | //      |   //////  | //   // | ////// |   //   |  //////  |    ////   |   ///  ///  | //     //  |   //     | ////// |  //////   | ////// | /////// | //////   |      // | //////// |  //////  |  //    | /////// |  //////// |       | //  //  // |
-`
-}
-

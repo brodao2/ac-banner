@@ -18,20 +18,27 @@ import { buildBanner, TDataBanner } from "../src";
 import { describe, expect, test } from '@jest/globals';
 import { defaultData } from "./data";
 
-describe("AC Banner: test build all supported characters in all fonts", () => {
-  it("should build the banner with all letters", async () => {
+describe("AC Banner: test build decorators with frame", () => {
+
+  it("...and font alphabet", async () => {
     const data: TDataBanner = defaultData;
-    const letters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const fonts: string[] = ["alphabet", "ansi-with-shadow", "bar"];
+    const banner: string[] = buildBanner("AC Banner", data, { font: "alphabet", frame: true });
 
-    fonts.forEach((font: string) => {
-      letters.split("").forEach((letter: string) => {
-        const banner: string[] = buildBanner(letter, data, { font: font as any });
-
-        expect(banner).toMatchSnapshot();
-      });
-    });
-
+    expect(banner).toMatchSnapshot();
   });
 
-})
+  it("...and font ansi-with-shadow", async () => {
+    const data: TDataBanner = defaultData;
+    const banner: string[] = buildBanner("AC Banner", data, { font: "ansi-with-shadow", frame: true });
+
+    expect(banner).toMatchSnapshot();
+  });
+
+  it("...and font bar", async () => {
+    const data: TDataBanner = defaultData;
+    const banner: string[] = buildBanner("AC Banner", data, { font: "bar", frame: true });
+
+    expect(banner).toMatchSnapshot();
+  });
+});
+

@@ -14,7 +14,7 @@ Copyright [2024] [Alan Cândido (brodao@gmail.com)]
    limitations under the License.
 */
 
-import { buildTitle, TBuildTitleOptions } from "./buildTitle";
+import { buildTitle, TBuildTitleOptions, TFrameOptions } from "./buildTitle";
 
 export class TDataBanner {
   displayName: string;
@@ -27,6 +27,15 @@ export class TDataBanner {
   homepage?: string
 }
 
+const defaultOptions: TBuildTitleOptions = {
+  font: "bar",
+  italic: false,
+  background: " ",
+  train: false,
+  separator: "",
+  frame: false
+}
+
 /**
  * Builds a banner string array from the provided title and data.
  *
@@ -35,22 +44,43 @@ export class TDataBanner {
  * @param options - Optional options for building the title.
  * @returns An array of strings representing the banner.
  */
-export function buildBanner(title: string, data: TDataBanner | {}, options?: TBuildTitleOptions): string[] {
+export function buildBanner(title: string, data: TDataBanner | {}, _options?: TBuildTitleOptions): string[] {
   const dataBanner: TDataBanner = normalizeData(data);
-  const lines: string[] = [];
+  const options: TBuildTitleOptions = normalizeOptions(_options);
+  const frame: TFrameOptions = options.frame as TFrameOptions;
   const titleLines: string[] = buildTitle(title, options);
-  const leftWidth: number = titleLines[0].length;
-  const rightWidth: number = dataBanner.maxLength || 20;
-  const top: string = `${"-".repeat(leftWidth)}-v-${"-".repeat(rightWidth)}`
-  const bottom: string = `${"-".repeat(leftWidth)}-^-${"-".repeat(rightWidth)}`
+  let leftWidth: number = titleLines[0].length;
+  let rightWidth: number = dataBanner.maxLength || 20;
+  let lines: string[] = [];
+  const middle: string = frame?._middle || "|";
 
-  lines.push(top);
-  lines.push(`${titleLines[0]} | ${dataBanner.displayName}`);
-  lines.push(`${titleLines[1]} | ${dataBanner.version}`);
-  lines.push(`${titleLines[2]} | `);
-  lines.push(`${titleLines[3]} | ${dataBanner.authorName}`);
-  lines.push(`${titleLines[4]} | ${dataBanner.authorEmail}`);
-  lines.push(bottom);
+  if (titleLines.length == 5) {
+    lines.push(`${titleLines[0]} ${middle} ${dataBanner.displayName.padEnd(rightWidth, " ")}`);
+    lines.push(`${titleLines[1]} ${middle} ${dataBanner.version.padEnd(rightWidth, " ")}`);
+    lines.push(`${titleLines[2]} ${middle} ${"".padEnd(rightWidth, " ")}`);
+    lines.push(`${titleLines[3]} ${middle} ${dataBanner.authorName.padEnd(rightWidth, " ")}`);
+    lines.push(`${titleLines[4]} ${middle} ${dataBanner.authorEmail.padEnd(rightWidth, " ")}`);
+  } else {
+    lines.push(`${titleLines[0]} ${middle} ${dataBanner.displayName.padEnd(rightWidth, " ")}`);
+    lines.push(`${titleLines[1]} ${middle} ${dataBanner.version.padEnd(rightWidth, " ")}`);
+    lines.push(`${titleLines[2]} ${middle} ${"".padEnd(rightWidth, " ")}`);
+    lines.push(`${titleLines[3]} ${middle} ${"".padEnd(rightWidth, " ")}`);
+    lines.push(`${titleLines[4]} ${middle} ${dataBanner.authorName.padEnd(rightWidth, " ")}`);
+    lines.push(`${titleLines[5]} ${middle} ${dataBanner.authorEmail.padEnd(rightWidth, " ")}`);
+  }
+  if (frame) {
+    lines = lines.map((line: string) => {
+      return `${frame.left}${line}${frame.right}`;
+    });
+
+    leftWidth++;
+    rightWidth++;
+    const top: string = `${frame._leftTop}${frame._top.repeat(leftWidth)}${frame._middleTop}${frame._top.repeat(rightWidth)}${frame._rightTop}`
+    lines.unshift(top);
+
+    const bottom: string = `${frame.leftBottom}${frame.bottom.repeat(leftWidth)}${frame.middleBottom}${frame.bottom.repeat(rightWidth)}${frame.rightBottom}`
+    lines.push(bottom);
+  }
 
   if (dataBanner.homepage) {
     lines.push(`Homepage .: ${dataBanner.homepage}`);
@@ -107,5 +137,56 @@ function normalizeData(data: TDataBanner | {}): TDataBanner {
   }
 
   return dataBanner;
+}
+
+function normalizeOptions(options: TBuildTitleOptions): TBuildTitleOptions {
+  if (!options) {
+    options = defaultOptions;
+  } else {
+    options = { ...defaultOptions, ...options };
+  }
+
+  if (typeof options.frame === "boolean") {
+    if (options.frame === true) {
+      if (options.font !== "ansi-with-shadow") {
+        options.frame = {
+          _leftTop: "*",
+          _top: "-",
+          _rightTop: "*",
+          left: "|",
+          _middle: "|",
+          right: "|",
+          rightBottom: "*",
+          bottom: "-",
+          leftBottom: "*",
+          //middleLeft: "*",
+          //middleRight: "*",
+          _middleTop: "v",
+          middleBottom: "^"
+        }
+      } else {
+        options.frame = {
+          _leftTop: "╔",
+          _top: "═",
+          _rightTop: "╗",
+          left: "║",
+          _middle: "╎",
+          right: "║",
+          rightBottom: "╝",
+          bottom: "═",
+          leftBottom: "╚",
+          //middleLeft: "*",
+          //middleRight: "*",
+          _middleTop: "╤",
+          middleBottom: "╧"
+        }
+
+      }
+    } else {
+      options.frame = undefined
+    };
+  }
+
+  return options;
 }
 

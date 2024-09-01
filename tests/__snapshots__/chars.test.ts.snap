@@ -1,937 +1,807 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 1`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 1`] = `
 [
-  "-------v---------------------",
-  "  AA   | AC Banner",
-  " A  A  | 1.0.0",
-  " AAAA  | ",
-  " A  A  | Alan Cândido",
-  " A  A  | brodao@gmail.com",
-  "-------^---------------------",
+  "  AA   | AC Banner           ",
+  " A  A  | 1.0.0               ",
+  " AAAA  |                     ",
+  " A  A  | Alan Cândido        ",
+  " A  A  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 2`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 2`] = `
 [
-  "--------v---------------------",
-  " BBBB   | AC Banner",
-  " B   B  | 1.0.0",
-  " BBBB   | ",
-  " B   B  | Alan Cândido",
-  " BBBB   | brodao@gmail.com",
-  "--------^---------------------",
+  " BBBB   | AC Banner           ",
+  " B   B  | 1.0.0               ",
+  " BBBB   |                     ",
+  " B   B  | Alan Cândido        ",
+  " BBBB   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 3`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 3`] = `
 [
-  "-------v---------------------",
-  "  CCC  | AC Banner",
-  " C     | 1.0.0",
-  " C     | ",
-  " C     | Alan Cândido",
-  "  CCC  | brodao@gmail.com",
-  "-------^---------------------",
+  "  CCC  | AC Banner           ",
+  " C     | 1.0.0               ",
+  " C     |                     ",
+  " C     | Alan Cândido        ",
+  "  CCC  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 4`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 4`] = `
 [
-  "-------v---------------------",
-  " DDD   | AC Banner",
-  " D  D  | 1.0.0",
-  " D  D  | ",
-  " D  D  | Alan Cândido",
-  " DDD   | brodao@gmail.com",
-  "-------^---------------------",
+  " DDD   | AC Banner           ",
+  " D  D  | 1.0.0               ",
+  " D  D  |                     ",
+  " D  D  | Alan Cândido        ",
+  " DDD   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 5`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 5`] = `
 [
-  "-------v---------------------",
-  " EEEE  | AC Banner",
-  " E     | 1.0.0",
-  " EEE   | ",
-  " E     | Alan Cândido",
-  " EEEE  | brodao@gmail.com",
-  "-------^---------------------",
+  " EEEE  | AC Banner           ",
+  " E     | 1.0.0               ",
+  " EEE   |                     ",
+  " E     | Alan Cândido        ",
+  " EEEE  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 6`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 6`] = `
 [
-  "-------v---------------------",
-  " FFFF  | AC Banner",
-  " F     | 1.0.0",
-  " FFF   | ",
-  " F     | Alan Cândido",
-  " F     | brodao@gmail.com",
-  "-------^---------------------",
+  " FFFF  | AC Banner           ",
+  " F     | 1.0.0               ",
+  " FFF   |                     ",
+  " F     | Alan Cândido        ",
+  " F     | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 7`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 7`] = `
 [
-  "--------v---------------------",
-  "  GGG   | AC Banner",
-  " G      | 1.0.0",
-  " G  GG  | ",
-  " G   G  | Alan Cândido",
-  "  GGG   | brodao@gmail.com",
-  "--------^---------------------",
+  "  GGG   | AC Banner           ",
+  " G      | 1.0.0               ",
+  " G  GG  |                     ",
+  " G   G  | Alan Cândido        ",
+  "  GGG   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 8`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 8`] = `
 [
-  "-------v---------------------",
-  " H  H  | AC Banner",
-  " H  H  | 1.0.0",
-  " HHHH  | ",
-  " H  H  | Alan Cândido",
-  " H  H  | brodao@gmail.com",
-  "-------^---------------------",
+  " H  H  | AC Banner           ",
+  " H  H  | 1.0.0               ",
+  " HHHH  |                     ",
+  " H  H  | Alan Cândido        ",
+  " H  H  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 9`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 9`] = `
 [
-  "------v---------------------",
-  " III  | AC Banner",
-  "  I   | 1.0.0",
-  "  I   | ",
-  "  I   | Alan Cândido",
-  " III  | brodao@gmail.com",
-  "------^---------------------",
+  " III  | AC Banner           ",
+  "  I   | 1.0.0               ",
+  "  I   |                     ",
+  "  I   | Alan Cândido        ",
+  " III  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 10`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 10`] = `
 [
-  "--------v---------------------",
-  "     J  | AC Banner",
-  "     J  | 1.0.0",
-  "     J  | ",
-  " J   J  | Alan Cândido",
-  "  JJJ   | brodao@gmail.com",
-  "--------^---------------------",
+  "     J  | AC Banner           ",
+  "     J  | 1.0.0               ",
+  "     J  |                     ",
+  " J   J  | Alan Cândido        ",
+  "  JJJ   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 11`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 11`] = `
 [
-  "-------v---------------------",
-  " K  K  | AC Banner",
-  " K K   | 1.0.0",
-  " KK    | ",
-  " K K   | Alan Cândido",
-  " K  K  | brodao@gmail.com",
-  "-------^---------------------",
+  " K  K  | AC Banner           ",
+  " K K   | 1.0.0               ",
+  " KK    |                     ",
+  " K K   | Alan Cândido        ",
+  " K  K  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 12`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 12`] = `
 [
-  "-------v---------------------",
-  " L     | AC Banner",
-  " L     | 1.0.0",
-  " L     | ",
-  " L     | Alan Cândido",
-  " LLLL  | brodao@gmail.com",
-  "-------^---------------------",
+  " L     | AC Banner           ",
+  " L     | 1.0.0               ",
+  " L     |                     ",
+  " L     | Alan Cândido        ",
+  " LLLL  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 13`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 13`] = `
 [
-  "--------v---------------------",
-  " M   M  | AC Banner",
-  " MM MM  | 1.0.0",
-  " M M M  | ",
-  " M   M  | Alan Cândido",
-  " M   M  | brodao@gmail.com",
-  "--------^---------------------",
+  " M   M  | AC Banner           ",
+  " MM MM  | 1.0.0               ",
+  " M M M  |                     ",
+  " M   M  | Alan Cândido        ",
+  " M   M  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 14`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 14`] = `
 [
-  "--------v---------------------",
-  " N   N  | AC Banner",
-  " NN  N  | 1.0.0",
-  " N N N  | ",
-  " N  NN  | Alan Cândido",
-  " N   N  | brodao@gmail.com",
-  "--------^---------------------",
+  " N   N  | AC Banner           ",
+  " NN  N  | 1.0.0               ",
+  " N N N  |                     ",
+  " N  NN  | Alan Cândido        ",
+  " N   N  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 15`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 15`] = `
 [
-  "--------v---------------------",
-  "  OOO   | AC Banner",
-  " O   O  | 1.0.0",
-  " O   O  | ",
-  " O   O  | Alan Cândido",
-  "  OOO   | brodao@gmail.com",
-  "--------^---------------------",
+  "  OOO   | AC Banner           ",
+  " O   O  | 1.0.0               ",
+  " O   O  |                     ",
+  " O   O  | Alan Cândido        ",
+  "  OOO   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 16`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 16`] = `
 [
-  "--------v---------------------",
-  " PPPP   | AC Banner",
-  " P   P  | 1.0.0",
-  " PPPP   | ",
-  " P      | Alan Cândido",
-  " P      | brodao@gmail.com",
-  "--------^---------------------",
+  " PPPP   | AC Banner           ",
+  " P   P  | 1.0.0               ",
+  " PPPP   |                     ",
+  " P      | Alan Cândido        ",
+  " P      | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 17`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 17`] = `
 [
-  "--------v---------------------",
-  "  QQQ   | AC Banner",
-  " Q   Q  | 1.0.0",
-  " Q   Q  | ",
-  " QQ  Q  | Alan Cândido",
-  "  QQQQ  | brodao@gmail.com",
-  "--------^---------------------",
+  "  QQQ   | AC Banner           ",
+  " Q   Q  | 1.0.0               ",
+  " Q   Q  |                     ",
+  " QQ  Q  | Alan Cândido        ",
+  "  QQQQ  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 18`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 18`] = `
 [
-  "--------v---------------------",
-  " RRRR   | AC Banner",
-  " R   R  | 1.0.0",
-  " RRRR   | ",
-  " R R    | Alan Cândido",
-  " R  RR  | brodao@gmail.com",
-  "--------^---------------------",
+  " RRRR   | AC Banner           ",
+  " R   R  | 1.0.0               ",
+  " RRRR   |                     ",
+  " R R    | Alan Cândido        ",
+  " R  RR  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 19`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 19`] = `
 [
-  "--------v---------------------",
-  "  SSS   | AC Banner",
-  " S      | 1.0.0",
-  "  SSS   | ",
-  "     S  | Alan Cândido",
-  " SSSS   | brodao@gmail.com",
-  "--------^---------------------",
+  "  SSS   | AC Banner           ",
+  " S      | 1.0.0               ",
+  "  SSS   |                     ",
+  "     S  | Alan Cândido        ",
+  " SSSS   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 20`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 20`] = `
 [
-  "---------v---------------------",
-  " TTTTTT  | AC Banner",
-  "   TT    | 1.0.0",
-  "   TT    | ",
-  "   TT    | Alan Cândido",
-  "   TT    | brodao@gmail.com",
-  "---------^---------------------",
+  " TTTTTT  | AC Banner           ",
+  "   TT    | 1.0.0               ",
+  "   TT    |                     ",
+  "   TT    | Alan Cândido        ",
+  "   TT    | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 21`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 21`] = `
 [
-  "--------v---------------------",
-  " U   U  | AC Banner",
-  " U   U  | 1.0.0",
-  " U   U  | ",
-  " U   U  | Alan Cândido",
-  "  UUU   | brodao@gmail.com",
-  "--------^---------------------",
+  " U   U  | AC Banner           ",
+  " U   U  | 1.0.0               ",
+  " U   U  |                     ",
+  " U   U  | Alan Cândido        ",
+  "  UUU   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 22`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 22`] = `
 [
-  "----------v---------------------",
-  " V     V  | AC Banner",
-  " V     V  | 1.0.0",
-  "  V   V   | ",
-  "   V V    | Alan Cândido",
-  "    V     | brodao@gmail.com",
-  "----------^---------------------",
+  " V     V  | AC Banner           ",
+  " V     V  | 1.0.0               ",
+  "  V   V   |                     ",
+  "   V V    | Alan Cândido        ",
+  "    V     | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 23`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 23`] = `
 [
-  "----------v---------------------",
-  " W     W  | AC Banner",
-  " W     W  | 1.0.0",
-  " W  W  W  | ",
-  "  W W W   | Alan Cândido",
-  "   W W    | brodao@gmail.com",
-  "----------^---------------------",
+  " W     W  | AC Banner           ",
+  " W     W  | 1.0.0               ",
+  " W  W  W  |                     ",
+  "  W W W   | Alan Cândido        ",
+  "   W W    | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 24`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 24`] = `
 [
-  "-------v---------------------",
-  "X   X  | AC Banner",
-  " X X   | 1.0.0",
-  "  X    | ",
-  " X X   | Alan Cândido",
-  "X   X  | brodao@gmail.com",
-  "-------^---------------------",
+  "X   X  | AC Banner           ",
+  " X X   | 1.0.0               ",
+  "  X    |                     ",
+  " X X   | Alan Cândido        ",
+  "X   X  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 25`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 25`] = `
 [
-  "---------v---------------------",
-  " Y   Y   | AC Banner",
-  "  Y Y    | 1.0.0",
-  "   Y     | ",
-  "   Y     | Alan Cândido",
-  "   Y     | brodao@gmail.com",
-  "---------^---------------------",
+  " Y   Y   | AC Banner           ",
+  "  Y Y    | 1.0.0               ",
+  "   Y     |                     ",
+  "   Y     | Alan Cândido        ",
+  "   Y     | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 26`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 26`] = `
 [
-  "--------v---------------------",
-  " ZZZZZ  | AC Banner",
-  "    Z   | 1.0.0",
-  "   Z    | ",
-  "  Z     | Alan Cândido",
-  " ZZZZZ  | brodao@gmail.com",
-  "--------^---------------------",
+  " ZZZZZ  | AC Banner           ",
+  "    Z   | 1.0.0               ",
+  "   Z    |                     ",
+  "  Z     | Alan Cândido        ",
+  " ZZZZZ  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 27`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 27`] = `
 [
-  "-----------v---------------------",
-  "  █████╗   | AC Banner",
-  " ██╔══██╗  | 1.0.0",
-  " ███████║  | ",
-  " ██╔══██║  | Alan Cândido",
-  " ██║  ██║  | brodao@gmail.com",
-  "-----------^---------------------",
+  "  █████▒   | AC Banner           ",
+  " ██▒▒▒██▒  | 1.0.0               ",
+  " ███████▒  |                     ",
+  " ██▒▒▒██▒  |                     ",
+  " ██▒  ██▒  | Alan Cândido        ",
+  " ▒▒▒  ▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 28`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 28`] = `
 [
-  "-----------v---------------------",
-  " ██████╗   | AC Banner",
-  " ██╔══██╗  | 1.0.0",
-  " ██████╔╝  | ",
-  " ██╔══██╗  | Alan Cândido",
-  " ██████╔╝  | brodao@gmail.com",
-  "-----------^---------------------",
+  " ██████▒   | AC Banner           ",
+  " ██▒▒▒██▒  | 1.0.0               ",
+  " ██████▒▒  |                     ",
+  " ██▒▒▒██▒  |                     ",
+  " ██████▒▒  | Alan Cândido        ",
+  " ▒▒▒▒▒▒▒   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 29`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 29`] = `
 [
-  "-----------v---------------------",
-  "  ██████╗  | AC Banner",
-  " ██╔════╝  | 1.0.0",
-  " ██║       | ",
-  " ██║       | Alan Cândido",
-  " ╚██████╗  | brodao@gmail.com",
-  "-----------^---------------------",
+  "  ██████▒  | AC Banner           ",
+  " ██▒▒▒▒▒▒  | 1.0.0               ",
+  " ██▒       |                     ",
+  " ██▒       |                     ",
+  " ▒██████▒  | Alan Cândido        ",
+  "  ▒▒▒▒▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 30`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 30`] = `
 [
-  "-----------v---------------------",
-  " ██████╗   | AC Banner",
-  " ██╔══██╗  | 1.0.0",
-  " ██║  ██║  | ",
-  " ██║  ██║  | Alan Cândido",
-  " ██████╔╝  | brodao@gmail.com",
-  "-----------^---------------------",
+  " ██████▒   | AC Banner           ",
+  " ██▒▒▒██▒  | 1.0.0               ",
+  " ██▒  ██▒  |                     ",
+  " ██▒  ██▒  |                     ",
+  " ██████▒▒  | Alan Cândido        ",
+  " ▒▒▒▒▒▒▒   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 31`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 31`] = `
 [
-  "-----------v---------------------",
-  " ███████╗  | AC Banner",
-  " ██╔════╝  | 1.0.0",
-  " █████╗    | ",
-  " ██╔══╝    | Alan Cândido",
-  " ███████╗  | brodao@gmail.com",
-  "-----------^---------------------",
+  " ███████▒  | AC Banner           ",
+  " ██▒▒▒▒▒▒  | 1.0.0               ",
+  " █████▒    |                     ",
+  " ██▒▒▒▒    |                     ",
+  " ███████▒  | Alan Cândido        ",
+  " ▒▒▒▒▒▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 32`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 32`] = `
 [
-  "-----------v---------------------",
-  " ███████╗  | AC Banner",
-  " ██╔════╝  | 1.0.0",
-  " █████╗    | ",
-  " ██╔══╝    | Alan Cândido",
-  " ██║       | brodao@gmail.com",
-  "-----------^---------------------",
+  " ███████▒  | AC Banner           ",
+  " ██▒▒▒▒▒▒  | 1.0.0               ",
+  " █████▒    |                     ",
+  " ██▒▒▒▒    |                     ",
+  " ██▒       | Alan Cândido        ",
+  " ▒▒▒       | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 33`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 33`] = `
 [
-  "------------v---------------------",
-  "  ██████╗   | AC Banner",
-  " ██╔════╝   | 1.0.0",
-  " ██║  ███╗  | ",
-  " ██║   ██║  | Alan Cândido",
-  " ╚██████╔╝  | brodao@gmail.com",
-  "------------^---------------------",
+  "  ██████▒   | AC Banner           ",
+  " ██▒▒▒▒▒▒   | 1.0.0               ",
+  " ██▒  ███▒  |                     ",
+  " ██▒   ██▒  |                     ",
+  " ▒██████▒▒  | Alan Cândido        ",
+  "  ▒▒▒▒▒▒▒   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 34`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 34`] = `
 [
-  "-----------v---------------------",
-  " ██╗  ██╗  | AC Banner",
-  " ██║  ██║  | 1.0.0",
-  " ███████║  | ",
-  " ██╔══██║  | Alan Cândido",
-  " ██║  ██║  | brodao@gmail.com",
-  "-----------^---------------------",
+  " ██▒  ██▒  | AC Banner           ",
+  " ██▒  ██▒  | 1.0.0               ",
+  " ███████▒  |                     ",
+  " ██▒▒▒██▒  |                     ",
+  " ██▒  ██▒  | Alan Cândido        ",
+  " ▒▒▒  ▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 35`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 35`] = `
 [
-  "------v---------------------",
-  " ██╗  | AC Banner",
-  " ██║  | 1.0.0",
-  " ██║  | ",
-  " ██║  | Alan Cândido",
-  " ██║  | brodao@gmail.com",
-  "------^---------------------",
+  " ██▒  | AC Banner           ",
+  " ██▒  | 1.0.0               ",
+  " ██▒  |                     ",
+  " ██▒  |                     ",
+  " ██▒  | Alan Cândido        ",
+  " ▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 36`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 36`] = `
 [
-  "-----------v---------------------",
-  "      ██╗  | AC Banner",
-  "      ██║  | 1.0.0",
-  "      ██║  | ",
-  " ██   ██║  | Alan Cândido",
-  " ╚█████╔╝  | brodao@gmail.com",
-  "-----------^---------------------",
+  "      ██▒  | AC Banner           ",
+  "      ██▒  | 1.0.0               ",
+  "      ██▒  |                     ",
+  " ██   ██▒  |                     ",
+  " ▒█████▒▒  | Alan Cândido        ",
+  "  ▒▒▒▒▒▒   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 37`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 37`] = `
 [
-  "-----------v---------------------",
-  " ██╗  ██╗  | AC Banner",
-  " ██║ ██╔╝  | 1.0.0",
-  " █████╔╝   | ",
-  " ██╔═██╗   | Alan Cândido",
-  " ██║  ██╗  | brodao@gmail.com",
-  "-----------^---------------------",
+  " ██▒  ██▒  | AC Banner           ",
+  " ██▒ ██▒▒  | 1.0.0               ",
+  " █████▒▒   |                     ",
+  " ██▒▒██▒   |                     ",
+  " ██▒  ██▒  | Alan Cândido        ",
+  " ▒▒▒  ▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 38`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 38`] = `
 [
-  "-----------v---------------------",
-  " ██╗       | AC Banner",
-  " ██║       | 1.0.0",
-  " ██║       | ",
-  " ██║       | Alan Cândido",
-  " ███████╗  | brodao@gmail.com",
-  "-----------^---------------------",
+  " ██▒       | AC Banner           ",
+  " ██▒       | 1.0.0               ",
+  " ██▒       |                     ",
+  " ██▒       |                     ",
+  " ███████▒  | Alan Cândido        ",
+  " ▒▒▒▒▒▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 39`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 39`] = `
 [
-  "--------------v---------------------",
-  " ███╗   ███╗  | AC Banner",
-  " ████╗ ████║  | 1.0.0",
-  " ██╔████╔██║  | ",
-  " ██║╚██╔╝██║  | Alan Cândido",
-  " ██║ ╚═╝ ██║  | brodao@gmail.com",
-  "--------------^---------------------",
+  " ███▒   ███▒  | AC Banner           ",
+  " ████▒ ████▒  | 1.0.0               ",
+  " ██▒████▒██▒  |                     ",
+  " ██▒▒██▒▒██▒  |                     ",
+  " ██▒ ▒▒▒ ██▒  | Alan Cândido        ",
+  " ▒▒▒     ▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 40`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 40`] = `
 [
-  "-------------v---------------------",
-  " ███╗   ██╗  | AC Banner",
-  " ████╗  ██║  | 1.0.0",
-  " ██╔██╗ ██║  | ",
-  " ██║╚██╗██║  | Alan Cândido",
-  " ██║ ╚████║  | brodao@gmail.com",
-  "-------------^---------------------",
+  " ███▒   ██▒  | AC Banner           ",
+  " ████▒  ██▒  | 1.0.0               ",
+  " ██▒██▒ ██▒  |                     ",
+  " ██▒▒██▒██▒  |                     ",
+  " ██▒ ▒████▒  | Alan Cândido        ",
+  " ▒▒▒  ▒▒▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 41`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 41`] = `
 [
-  "------------v---------------------",
-  "  ██████╗   | AC Banner",
-  " ██╔═══██╗  | 1.0.0",
-  " ██║   ██║  | ",
-  " ██║   ██║  | Alan Cândido",
-  " ╚██████╔╝  | brodao@gmail.com",
-  "------------^---------------------",
+  "  ██████▒   | AC Banner           ",
+  " ██▒▒▒▒██▒  | 1.0.0               ",
+  " ██▒   ██▒  |                     ",
+  " ██▒   ██▒  |                     ",
+  " ▒██████▒▒  | Alan Cândido        ",
+  "  ▒▒▒▒▒▒▒   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 42`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 42`] = `
 [
-  "-----------v---------------------",
-  " ██████╗   | AC Banner",
-  " ██╔══██╗  | 1.0.0",
-  " ██████╔╝  | ",
-  " ██╔═══╝   | Alan Cândido",
-  " ██║       | brodao@gmail.com",
-  "-----------^---------------------",
+  " ██████▒   | AC Banner           ",
+  " ██▒▒▒██▒  | 1.0.0               ",
+  " ██████▒▒  |                     ",
+  " ██▒▒▒▒▒   |                     ",
+  " ██▒       | Alan Cândido        ",
+  " ▒▒▒       | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 43`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 43`] = `
 [
-  "------------v---------------------",
-  "  ██████╗   | AC Banner",
-  " ██╔═══██╗  | 1.0.0",
-  " ██║   ██║  | ",
-  " ██║▄▄ ██║  | Alan Cândido",
-  " ╚██████╔╝  | brodao@gmail.com",
-  "------------^---------------------",
+  "  ██████▒   | AC Banner           ",
+  " ██▒▒▒▒██▒  | 1.0.0               ",
+  " ██▒   ██▒  |                     ",
+  " ██▒▄▄ ██▒  |                     ",
+  " ▒██████▒▒  | Alan Cândido        ",
+  "  ▒▒▒▀▀▒▒   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 44`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 44`] = `
 [
-  "-----------v---------------------",
-  " ██████╗   | AC Banner",
-  " ██╔══██╗  | 1.0.0",
-  " ██████╔╝  | ",
-  " ██╔══██╗  | Alan Cândido",
-  " ██║  ██║  | brodao@gmail.com",
-  "-----------^---------------------",
+  " ██████▒   | AC Banner           ",
+  " ██▒▒▒██▒  | 1.0.0               ",
+  " ██████▒▒  |                     ",
+  " ██▒▒▒██▒  |                     ",
+  " ██▒  ██▒  | Alan Cândido        ",
+  " ▒▒▒  ▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 45`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 45`] = `
 [
-  "-----------v---------------------",
-  " ███████╗  | AC Banner",
-  " ██╔════╝  | 1.0.0",
-  " ███████╗  | ",
-  " ╚════██║  | Alan Cândido",
-  " ███████║  | brodao@gmail.com",
-  "-----------^---------------------",
+  " ███████▒  | AC Banner           ",
+  " ██▒▒▒▒▒▒  | 1.0.0               ",
+  " ███████▒  |                     ",
+  " ▒▒▒▒▒██▒  |                     ",
+  " ███████▒  | Alan Cândido        ",
+  " ▒▒▒▒▒▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 46`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 46`] = `
 [
-  "------------v---------------------",
-  " ████████╗  | AC Banner",
-  " ╚══██╔══╝  | 1.0.0",
-  "    ██║     | ",
-  "    ██║     | Alan Cândido",
-  "    ██║     | brodao@gmail.com",
-  "------------^---------------------",
+  " ████████▒  | AC Banner           ",
+  " ▒▒▒██▒▒▒▒  | 1.0.0               ",
+  "    ██▒     |                     ",
+  "    ██▒     |                     ",
+  "    ██▒     | Alan Cândido        ",
+  "    ▒▒▒     | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 47`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 47`] = `
 [
-  "------------v---------------------",
-  " ██╗   ██╗  | AC Banner",
-  " ██║   ██║  | 1.0.0",
-  " ██║   ██║  | ",
-  " ██║   ██║  | Alan Cândido",
-  " ╚██████╔╝  | brodao@gmail.com",
-  "------------^---------------------",
+  " ██▒   ██▒  | AC Banner           ",
+  " ██▒   ██▒  | 1.0.0               ",
+  " ██▒   ██▒  |                     ",
+  " ██▒   ██▒  |                     ",
+  " ▒██████▒▒  | Alan Cândido        ",
+  "  ▒▒▒▒▒▒▒   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 48`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 48`] = `
 [
-  "------------v---------------------",
-  " ██╗   ██╗  | AC Banner",
-  " ██║   ██║  | 1.0.0",
-  " ██║   ██║  | ",
-  " ╚██╗ ██╔╝  | Alan Cândido",
-  "  ╚████╔╝   | brodao@gmail.com",
-  "------------^---------------------",
+  " ██▒   ██▒  | AC Banner           ",
+  " ██▒   ██▒  | 1.0.0               ",
+  " ██▒   ██▒  |                     ",
+  " ▒██▒ ██▒▒  |                     ",
+  "  ▒████▒▒   | Alan Cândido        ",
+  "   ▒▒▒▒▒    | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 49`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 49`] = `
 [
-  "-------------v---------------------",
-  " ██╗    ██╗  | AC Banner",
-  " ██║    ██║  | 1.0.0",
-  " ██║ █╗ ██║  | ",
-  " ██║███╗██║  | Alan Cândido",
-  " ╚███╔███╔╝  | brodao@gmail.com",
-  "-------------^---------------------",
+  " ██▒    ██▒  | AC Banner           ",
+  " ██▒    ██▒  | 1.0.0               ",
+  " ██▒ █▒ ██▒  |                     ",
+  " ██▒███▒██▒  |                     ",
+  " ▒███▒███▒▒  | Alan Cândido        ",
+  "  ▒▒▒▒▒▒▒▒   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 50`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 50`] = `
 [
-  "-------------v---------------------",
-  "  ██╗  ██╗   | AC Banner",
-  "  ╚██╗██╔╝   | 1.0.0",
-  "   ╚███╔╝    | ",
-  "   ██╔██╗    | Alan Cândido",
-  "  ██╔╝ ██╗   | brodao@gmail.com",
-  "-------------^---------------------",
+  "  ██▒  ██▒   | AC Banner           ",
+  "  ▒██▒██▒▒   | 1.0.0               ",
+  "   ▒███▒▒    |                     ",
+  "   ██▒██▒    |                     ",
+  "  ██▒▒ ██▒   | Alan Cândido        ",
+  "  ▒▒▒  ▒▒▒   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 51`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 51`] = `
 [
-  "------------v---------------------",
-  " ██╗   ██╗  | AC Banner",
-  " ╚██╗ ██╔╝  | 1.0.0",
-  "  ╚████╔╝   | ",
-  "   ╚██╔╝    | Alan Cândido",
-  "    ██║     | brodao@gmail.com",
-  "------------^---------------------",
+  " ██▒   ██▒  | AC Banner           ",
+  " ▒██▒ ██▒▒  | 1.0.0               ",
+  "  ▒████▒▒   |                     ",
+  "   ▒██▒▒    |                     ",
+  "    ██▒     | Alan Cândido        ",
+  "    ▒▒▒     | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 52`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 52`] = `
 [
-  "-----------v---------------------",
-  " ███████╗  | AC Banner",
-  " ╚══███╔╝  | 1.0.0",
-  "   ███╔╝   | ",
-  "  ███╔╝    | Alan Cândido",
-  " ███████╗  | brodao@gmail.com",
-  "-----------^---------------------",
+  " ███████▒  | AC Banner           ",
+  " ▒▒▒███▒▒  | 1.0.0               ",
+  "   ███▒▒   |                     ",
+  "  ███▒▒    |                     ",
+  " ███████▒  | Alan Cândido        ",
+  " ▒▒▒▒▒▒▒▒  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 53`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 53`] = `
 [
-  "----------v---------------------",
-  " ///////  | AC Banner",
-  " //   //  | 1.0.0",
-  " ///////  | ",
-  " //   //  | Alan Cândido",
-  " //   //  | brodao@gmail.com",
-  "----------^---------------------",
+  " ///////  | AC Banner           ",
+  " //   //  | 1.0.0               ",
+  " ///////  |                     ",
+  " //   //  | Alan Cândido        ",
+  " //   //  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 54`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 54`] = `
 [
-  "----------v---------------------",
-  " //////   | AC Banner",
-  " //   //  | 1.0.0",
-  " //////   | ",
-  " //   //  | Alan Cândido",
-  " //////   | brodao@gmail.com",
-  "----------^---------------------",
+  " //////   | AC Banner           ",
+  " //   //  | 1.0.0               ",
+  " //////   |                     ",
+  " //   //  | Alan Cândido        ",
+  " //////   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 55`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 55`] = `
 [
-  "---------v---------------------",
-  " //////  | AC Banner",
-  " //      | 1.0.0",
-  " //      | ",
-  " //      | Alan Cândido",
-  " //////  | brodao@gmail.com",
-  "---------^---------------------",
+  " //////  | AC Banner           ",
+  " //      | 1.0.0               ",
+  " //      |                     ",
+  " //      | Alan Cândido        ",
+  " //////  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 56`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 56`] = `
 [
-  "-----------v---------------------",
-  " //////    | AC Banner",
-  " //    //  | 1.0.0",
-  " //    //  | ",
-  " //    //  | Alan Cândido",
-  " //////    | brodao@gmail.com",
-  "-----------^---------------------",
+  " //////    | AC Banner           ",
+  " //    //  | 1.0.0               ",
+  " //    //  |                     ",
+  " //    //  | Alan Cândido        ",
+  " //////    | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 57`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 57`] = `
 [
-  "----------v---------------------",
-  " ///////  | AC Banner",
-  " //       | 1.0.0",
-  " /////    | ",
-  " //       | Alan Cândido",
-  " ///////  | brodao@gmail.com",
-  "----------^---------------------",
+  " ///////  | AC Banner           ",
+  " //       | 1.0.0               ",
+  " /////    |                     ",
+  " //       | Alan Cândido        ",
+  " ///////  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 58`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 58`] = `
 [
-  "----------v---------------------",
-  " ///////  | AC Banner",
-  " //       | 1.0.0",
-  " /////    | ",
-  " //       | Alan Cândido",
-  " //       | brodao@gmail.com",
-  "----------^---------------------",
+  " ///////  | AC Banner           ",
+  " //       | 1.0.0               ",
+  " /////    |                     ",
+  " //       | Alan Cândido        ",
+  " //       | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 59`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 59`] = `
 [
-  "------------v---------------------",
-  "  //////    | AC Banner",
-  " //         | 1.0.0",
-  " //    ///  | ",
-  " //     //  | Alan Cândido",
-  "  ///////   | brodao@gmail.com",
-  "------------^---------------------",
+  "  //////    | AC Banner           ",
+  " //         | 1.0.0               ",
+  " //    ///  |                     ",
+  " //     //  | Alan Cândido        ",
+  "  ///////   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 60`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 60`] = `
 [
-  "----------v---------------------",
-  " //   //  | AC Banner",
-  " //   //  | 1.0.0",
-  " ///////  | ",
-  " //   //  | Alan Cândido",
-  " //   //  | brodao@gmail.com",
-  "----------^---------------------",
+  " //   //  | AC Banner           ",
+  " //   //  | 1.0.0               ",
+  " ///////  |                     ",
+  " //   //  | Alan Cândido        ",
+  " //   //  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 61`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 61`] = `
 [
-  "-----v---------------------",
-  " //  | AC Banner",
-  " //  | 1.0.0",
-  " //  | ",
-  " //  | Alan Cândido",
-  " //  | brodao@gmail.com",
-  "-----^---------------------",
+  " //  | AC Banner           ",
+  " //  | 1.0.0               ",
+  " //  |                     ",
+  " //  | Alan Cândido        ",
+  " //  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 62`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 62`] = `
 [
-  "----------v---------------------",
-  "      //  | AC Banner",
-  "      //  | 1.0.0",
-  "      //  | ",
-  " //   //  | Alan Cândido",
-  "   /////  | brodao@gmail.com",
-  "----------^---------------------",
+  "      //  | AC Banner           ",
+  "      //  | 1.0.0               ",
+  "      //  |                     ",
+  " //   //  | Alan Cândido        ",
+  "   /////  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 63`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 63`] = `
 [
-  "-----------v---------------------",
-  " //    //  | AC Banner",
-  " //   //   | 1.0.0",
-  " /////     | ",
-  " //   //   | Alan Cândido",
-  " //    //  | brodao@gmail.com",
-  "-----------^---------------------",
+  " //    //  | AC Banner           ",
+  " //   //   | 1.0.0               ",
+  " /////     |                     ",
+  " //   //   | Alan Cândido        ",
+  " //    //  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 64`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 64`] = `
 [
-  "----------v---------------------",
-  " //       | AC Banner",
-  " //       | 1.0.0",
-  " //       | ",
-  " //       | Alan Cândido",
-  " ///////  | brodao@gmail.com",
-  "----------^---------------------",
+  " //       | AC Banner           ",
+  " //       | 1.0.0               ",
+  " //       |                     ",
+  " //       | Alan Cândido        ",
+  " ///////  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 65`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 65`] = `
 [
-  "--------------v---------------------",
-  " ///     ///  | AC Banner",
-  " ////   ////  | 1.0.0",
-  " //  //// //  | ",
-  " //    // //  | Alan Cândido",
-  " //       //  | brodao@gmail.com",
-  "--------------^---------------------",
+  " ///     ///  | AC Banner           ",
+  " ////   ////  | 1.0.0               ",
+  " //  //// //  |                     ",
+  " //    // //  | Alan Cândido        ",
+  " //       //  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 66`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 66`] = `
 [
-  "------------v---------------------",
-  " ///    //  | AC Banner",
-  " ////   //  | 1.0.0",
-  " // //  //  | ",
-  " //  // //  | Alan Cândido",
-  " //   ////  | brodao@gmail.com",
-  "------------^---------------------",
+  " ///    //  | AC Banner           ",
+  " ////   //  | 1.0.0               ",
+  " // //  //  |                     ",
+  " //  // //  | Alan Cândido        ",
+  " //   ////  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 67`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 67`] = `
 [
-  "-----------v---------------------",
-  "  //////   | AC Banner",
-  " //    //  | 1.0.0",
-  " //    //  | ",
-  " //    //  | Alan Cândido",
-  "  //////   | brodao@gmail.com",
-  "-----------^---------------------",
+  "  //////   | AC Banner           ",
+  " //    //  | 1.0.0               ",
+  " //    //  |                     ",
+  " //    //  | Alan Cândido        ",
+  "  //////   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 68`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 68`] = `
 [
-  "----------v---------------------",
-  " //////   | AC Banner",
-  " //   //  | 1.0.0",
-  " //////   | ",
-  " //       | Alan Cândido",
-  " //       | brodao@gmail.com",
-  "----------^---------------------",
+  " //////   | AC Banner           ",
+  " //   //  | 1.0.0               ",
+  " //////   |                     ",
+  " //       | Alan Cândido        ",
+  " //       | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 69`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 69`] = `
 [
-  "------------v---------------------",
-  "  //////    | AC Banner",
-  " //     //  | 1.0.0",
-  " //  /  //  | ",
-  " // //  //  | Alan Cândido",
-  "   //////   | brodao@gmail.com",
-  "------------^---------------------",
+  "  //////    | AC Banner           ",
+  " //     //  | 1.0.0               ",
+  " //  /  //  |                     ",
+  " // //  //  | Alan Cândido        ",
+  "   //////   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 70`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 70`] = `
 [
-  "----------v---------------------",
-  " //////   | AC Banner",
-  " //   //  | 1.0.0",
-  " //////   | ",
-  " //   //  | Alan Cândido",
-  " //   //  | brodao@gmail.com",
-  "----------^---------------------",
+  " //////   | AC Banner           ",
+  " //   //  | 1.0.0               ",
+  " //////   |                     ",
+  " //   //  | Alan Cândido        ",
+  " //   //  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 71`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 71`] = `
 [
-  "---------v---------------------",
-  " //////  | AC Banner",
-  " //      | 1.0.0",
-  " //////  | ",
-  "     //  | Alan Cândido",
-  " //////  | brodao@gmail.com",
-  "---------^---------------------",
+  " //////  | AC Banner           ",
+  " //      | 1.0.0               ",
+  " //////  |                     ",
+  "     //  | Alan Cândido        ",
+  " //////  | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 72`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 72`] = `
 [
-  "---------v---------------------",
-  " //////  | AC Banner",
-  "   //    | 1.0.0",
-  "   //    | ",
-  "   //    | Alan Cândido",
-  "   //    | brodao@gmail.com",
-  "---------^---------------------",
+  " //////  | AC Banner           ",
+  "   //    | 1.0.0               ",
+  "   //    |                     ",
+  "   //    | Alan Cândido        ",
+  "   //    | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 73`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 73`] = `
 [
-  "-----------v---------------------",
-  " //    //  | AC Banner",
-  " //    //  | 1.0.0",
-  " //    //  | ",
-  " //    //  | Alan Cândido",
-  "  //////   | brodao@gmail.com",
-  "-----------^---------------------",
+  " //    //  | AC Banner           ",
+  " //    //  | 1.0.0               ",
+  " //    //  |                     ",
+  " //    //  | Alan Cândido        ",
+  "  //////   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 74`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 74`] = `
 [
-  "------------v---------------------",
-  " //     //  | AC Banner",
-  " //     //  | 1.0.0",
-  " //     //  | ",
-  "   //   //  | Alan Cândido",
-  "    ////    | brodao@gmail.com",
-  "------------^---------------------",
+  " //     //  | AC Banner           ",
+  " //     //  | 1.0.0               ",
+  " //     //  |                     ",
+  "   //   //  | Alan Cândido        ",
+  "    ////    | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 75`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 75`] = `
 [
-  "--------------v---------------------",
-  " //       //  | AC Banner",
-  " //       //  | 1.0.0",
-  " //   /   //  | ",
-  " //  ///  //  | Alan Cândido",
-  "   ///  ///   | brodao@gmail.com",
-  "--------------^---------------------",
+  " //       //  | AC Banner           ",
+  " //       //  | 1.0.0               ",
+  " //   /   //  |                     ",
+  " //  ///  //  | Alan Cândido        ",
+  "   ///  ///   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 76`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 76`] = `
 [
-  "-------------v---------------------",
-  " //      //  | AC Banner",
-  "   //  //    | 1.0.0",
-  "    ///      | ",
-  "  //  //     | Alan Cândido",
-  " //     //   | brodao@gmail.com",
-  "-------------^---------------------",
+  " //      //  | AC Banner           ",
+  "   //  //    | 1.0.0               ",
+  "    ///      |                     ",
+  "  //  //     | Alan Cândido        ",
+  " //     //   | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 77`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 77`] = `
 [
-  "-----------v---------------------",
-  " //    //  | AC Banner",
-  "  //   //  | 1.0.0",
-  "   ////    | ",
-  "    //     | Alan Cândido",
-  "   //      | brodao@gmail.com",
-  "-----------^---------------------",
+  " //    //  | AC Banner           ",
+  "  //   //  | 1.0.0               ",
+  "   ////    |                     ",
+  "    //     | Alan Cândido        ",
+  "   //      | brodao@gmail.com    ",
 ]
 `;
 
-exports[`AC Banner: test build all supported characters should build the banner with all letters in all fonts 78`] = `
+exports[`AC Banner: test build all supported characters in all fonts should build the banner with all letters 78`] = `
 [
-  "---------v---------------------",
-  " //////  | AC Banner",
-  "    //   | 1.0.0",
-  "   //    | ",
-  "  //     | Alan Cândido",
-  " //////  | brodao@gmail.com",
-  "---------^---------------------",
+  " //////  | AC Banner           ",
+  "    //   | 1.0.0               ",
+  "   //    |                     ",
+  "  //     | Alan Cândido        ",
+  " //////  | brodao@gmail.com    ",
 ]
 `;
