@@ -53,8 +53,9 @@ export function buildBanner(title: string, data: TDataBanner | {}, _options?: TB
   let rightWidth: number = dataBanner.maxLength || 20;
   let lines: string[] = [];
   const middle: string = frame?._middle || "|";
+  const maxLines: number = titleLines.length;
 
-  if (titleLines.length == 5) {
+  if (titleLines.length < 6) {
     lines.push(`${titleLines[0]} ${middle} ${dataBanner.displayName.padEnd(rightWidth, " ")}`);
     lines.push(`${titleLines[1]} ${middle} ${dataBanner.version.padEnd(rightWidth, " ")}`);
     lines.push(`${titleLines[2]} ${middle} ${"".padEnd(rightWidth, " ")}`);
@@ -67,6 +68,11 @@ export function buildBanner(title: string, data: TDataBanner | {}, _options?: TB
     lines.push(`${titleLines[3]} ${middle} ${"".padEnd(rightWidth, " ")}`);
     lines.push(`${titleLines[4]} ${middle} ${dataBanner.authorName.padEnd(rightWidth, " ")}`);
     lines.push(`${titleLines[5]} ${middle} ${dataBanner.authorEmail.padEnd(rightWidth, " ")}`);
+  }
+
+  if (options.train) {
+    lines.push(titleLines[maxLines + 1]);
+    lines.push(titleLines[maxLines + 21]);
   }
   if (frame) {
     lines = lines.map((line: string) => {

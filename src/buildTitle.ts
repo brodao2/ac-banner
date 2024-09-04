@@ -17,6 +17,7 @@ Copyright [2024] [Alan Cândido (brodao@gmail.com)]
 import { alphabet } from "./font/alphabet";
 import { ansiWithShadow } from "./font/ansiWithShadow";
 import { bar } from "./font/bar";
+import { getComposition } from "./font/train";
 
 export type TFrameOptions = {
     _leftTop: string;
@@ -45,15 +46,36 @@ export type TBuildTitleOptions = {
 
 export function buildTitle(title: string, options: TBuildTitleOptions = {}): string[] {
     const font: Record<string, string[]> = getFont(options.font);
-    let lines: string[] = new Array(font["A"].length).fill("");
-    title = title.toUpperCase();
+    let lines: string[] = new Array(font["A"].length + (options.train ? 2 : 0)).fill("");
+    let compositionType: number = 0;
+
+    title = title.toUpperCase() + (options.train ? " " : "");
 
     for (let index = 0; index < title.length; index++) {
         const char: string[] = font[title.at(index)] || font[" "];
+        let widthChar: number = char[0].length;
+        let centerSpc: string = "";
+
+        if (options.train) {
+            if (index == title.length - 1) {
+                compositionType = -1;
+            } else if (compositionType > 3) {
+                compositionType = 0;
+            }
+
+            const composition: string[] = getComposition(compositionType, widthChar);
+
+            lines[lines.length - 2] += composition[0];
+            lines[lines.length - 1] += composition[1];
+
+            centerSpc = " "; //.repeat(((composition[0].length - widthChar) / 2) + ((composition[1].length - widthChar) % 2));
+            compositionType++;
+        }
 
         char.forEach((part: string, index: number) => {
-            lines[index] += part + (options.separator);
+            lines[index] += `${centerSpc}${part}${options.separator}`;
         });
+
     }
 
     if (options.italic) {
@@ -91,7 +113,7 @@ function getFont(fontName: string): Record<string, string[]> {
     } else {
         throw new Error(`Font ${fontName} not found. Use one of: alphabet, ansi-with-shadow, bar`);
     }
-    
+
     return data;
 }
 

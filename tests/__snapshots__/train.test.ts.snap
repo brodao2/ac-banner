@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AC Banner: test build decorators with train ...and font alphabet 1`] = `
+[
+  "   AA     CCC        BBBB     AA    N   N   N   N   EEEE   RRRR        | AC Banner           ",
+  "  A  A   C           B   B   A  A   NN  N   NN  N   E      R   R       | 1.0.0               ",
+  "  AAAA   C           BBBB    AAAA   N N N   N N N   EEE    RRRR        |                     ",
+  "  A  A   C           B   B   A  A   N  NN   N  NN   E      R R         |                     ",
+  "  A  A    CCC        BBBB    A  A   N   N   N   N   EEEE   R  RR       | Alan Cândido        ",
+  ".[====].(----).\\__/.[_____].[====].(-----).\\_____/.[____].[=====].]@|--Y_ | brodao@gmail.com    ",
+]
+`;
