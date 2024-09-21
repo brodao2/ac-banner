@@ -1,20 +1,29 @@
 {
   "name": "@brodao/ac-banner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create ASCII art banners for use in CLI applications or VS-Code extensions.",
   "main": "dist/src/index.js",
   "scripts": {
     "--COMPILE--": "",
     "compile": "tsc",
     "watch": "tsc -w",
+    "build": "tsc",
     "--TEST--": "",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:snapshot": "jest --updateSnapshot",
     "pretest": "npm run compile",
-    "--MISC--": "",
+    "--FORMAT/ESLINT --": "",
     "format:check": "prettier --check *.ts",
     "format": "prettier --write *.ts",
+    "eslint": "npx -y eslint src",
+    "eslint:fix": "npx -y eslint . --fix",
+    "---RELEASE---": "",
+    "release": "npx -y standard-version --skip.changelog --release-as 0.0.2",
+    "tag": "git push --follow-tags origin main",
+    "package": "npm package",
+    "prepackage": "npm run build",
+    "publish": "npm run package && npm publish --access public --dry-run",
     "---MISC---": "",
     "all-contributors:generate": "npx -y all-contributors generate",
     "all-contributors:check": "npx -y all-contributors check"
@@ -45,13 +54,18 @@
   },
   "homepage": "https://github.com/brodao2/ac-banner#readme",
   "devDependencies": {
+    "@eslint/compat": "^1.1.1",
+    "@eslint/js": "^9.11.0",
     "@jest/globals": "^29.7.0",
+    "@types/eslint__js": "^8.42.3",
     "@types/jest": "^29.5.12",
+    "eslint": "^8.57.1",
     "jest": "^29.7.0",
     "prettier": "^3.3.3",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0"
   },
   "types": "./dist/index.d.ts"
 }
