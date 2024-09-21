@@ -1,5 +1,5 @@
 {
-  "name": "@brodao/ac-banner",
+  "name": "@aclab/ac-banner",
   "version": "0.0.2",
   "description": "Create ASCII art banners for use in CLI applications or VS-Code extensions.",
   "main": "dist/src/index.js",
