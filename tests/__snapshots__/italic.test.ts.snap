@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AC Banner: test build decorators with italic ...and font alphabet 1`] = `
+exports[`test build decorators with italic ...and font alphabet 1`] = `
 [
   "      AA    CCC      BBBB    AA   N   N  N   N  EEEE  RRRR   | AC Banner           ",
   "    A  A  C         B   B  A  A  NN  N  NN  N  E     R   R   | 1.0.0               ",
@@ -10,18 +10,18 @@ exports[`AC Banner: test build decorators with italic ...and font alphabet 1`] =
 ]
 `;
 
-exports[`AC Banner: test build decorators with italic ...and font ansi-with-shadow 1`] = `
+exports[`test build decorators with italic ...and font ansi-with-shadow 1`] = `
 [
   "       █████▒    ██████▒        ██████▒    █████▒   ███▒   ██▒  ███▒   ██▒  ███████▒  ██████▒   | AC Banner           ",
   "     ██▒▒▒██▒  ██▒▒▒▒▒▒        ██▒▒▒██▒  ██▒▒▒██▒  ████▒  ██▒  ████▒  ██▒  ██▒▒▒▒▒▒  ██▒▒▒██▒   | 1.0.0               ",
   "    ███████▒  ██▒             ██████▒▒  ███████▒  ██▒██▒ ██▒  ██▒██▒ ██▒  █████▒    ██████▒▒    |                     ",
-  "   ██▒▒▒██▒  ██▒             ██▒▒▒██▒  ██▒▒▒██▒  ██▒▒██▒██▒  ██▒▒██▒██▒  ██▒▒▒▒    ██▒▒▒██▒     |                     ",
-  "  ██▒  ██▒  ▒██████▒        ██████▒▒  ██▒  ██▒  ██▒ ▒████▒  ██▒ ▒████▒  ███████▒  ██▒  ██▒      | Alan Cândido        ",
-  " ▒▒▒  ▒▒▒   ▒▒▒▒▒▒▒        ▒▒▒▒▒▒▒   ▒▒▒  ▒▒▒  ▒▒▒  ▒▒▒▒▒  ▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒  ▒▒▒       | brodao@gmail.com    ",
+  "   ██▒▒▒██▒  ██▒             ██▒▒▒██▒  ██▒▒▒██▒  ██▒▒██▒██▒  ██▒▒██▒██▒  ██▒▒▒▒    ██▒▒▒██▒     | Alan Cândido        ",
+  "  ██▒  ██▒  ▒██████▒        ██████▒▒  ██▒  ██▒  ██▒ ▒████▒  ██▒ ▒████▒  ███████▒  ██▒  ██▒      | brodao@gmail.com    ",
+  " ▒▒▒  ▒▒▒   ▒▒▒▒▒▒▒        ▒▒▒▒▒▒▒   ▒▒▒  ▒▒▒  ▒▒▒  ▒▒▒▒▒  ▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒  ▒▒▒       |                     ",
 ]
 `;
 
-exports[`AC Banner: test build decorators with italic ...and font bar 1`] = `
+exports[`test build decorators with italic ...and font bar 1`] = `
 [
   "     ///////  //////        //////   ///////  ///    //  ///    //  ///////  //////   | AC Banner           ",
   "    //   //  //            //   //  //   //  ////   //  ////   //  //       //   //   | 1.0.0               ",

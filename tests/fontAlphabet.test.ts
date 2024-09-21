@@ -18,7 +18,7 @@ import { buildBanner, TDataBanner } from "../src";
 import { describe, expect, test } from '@jest/globals';
 import { defaultData, defaultWithUrlData } from "./data";
 
-describe("AC Banner: Alphabet Font", () => {
+describe("Alphabet Font", () => {
   it("should build the banner with default options and values", async () => {
     const data: TDataBanner = defaultData;
     const expected: string[] = [

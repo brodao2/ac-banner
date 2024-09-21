@@ -18,13 +18,14 @@ import { buildBanner, TDataBanner } from "../src";
 import { describe, expect, test } from '@jest/globals';
 import { defaultData } from "./data";
 
-describe("AC Banner: test build all supported characters in all fonts", () => {
-  it("should build the banner with all letters", async () => {
-    const data: TDataBanner = defaultData;
-    const letters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const fonts: string[] = ["alphabet", "ansi-with-shadow", "bar"];
+describe("test build all supported characters in all fonts", () => {
+  const fonts: string[] = ["alphabet", "ansi-with-shadow", "bar"];
 
-    fonts.forEach((font: string) => {
+  fonts.forEach((font: string) => {
+    it(`${font}`, async () => {
+      const data: TDataBanner = defaultData;
+      const letters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
       letters.split("").forEach((letter: string) => {
         const banner: string[] = buildBanner(letter, data, { font: font as any, train: false });
 

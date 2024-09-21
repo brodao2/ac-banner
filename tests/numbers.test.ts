@@ -18,7 +18,7 @@ import { buildBanner, TDataBanner } from "../src";
 import { describe, expect, test } from '@jest/globals';
 import { defaultData } from "./data";
 
-describe("AC Banner: test build all supported numbers", () => {
+describe("test build all supported numbers", () => {
   it("should build the banner with all numbers in all fonts", async () => {
     const data: TDataBanner = defaultData;
     const numbers: string = "1234567890-*";
@@ -26,7 +26,7 @@ describe("AC Banner: test build all supported numbers", () => {
 
     fonts.forEach((font: string) => {
       numbers.split("").forEach((letter: string) => {
-        const banner: string[] = buildBanner(letter, data, { font: font as any});
+        const banner: string[] = buildBanner(letter, data, { font: font as any });
 
         expect(banner).toMatchSnapshot();
       });

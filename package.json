@@ -10,6 +10,7 @@
     "--TEST--": "",
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "test:snapshot": "jest --updateSnapshot",
     "pretest": "npm run compile",
     "--MISC--": "",
     "format:check": "prettier --check *.ts",

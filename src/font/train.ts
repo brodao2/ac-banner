@@ -13,41 +13,41 @@ Copyright [2024] [Alan Cândido (brodao@gmail.com)]
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-
 export function getComposition(type: number, width: number): string[] {
+    const reverseBar: string = String.fromCharCode(92); // \
     let composition: string[] = [];
     width = width - 2;
 
     if (type === 0) {
         composition = [
             `.[${"=".repeat(width)}]`,
-            `__o${"_".repeat(width)}o_`
+            `__o${"_".repeat(width - 2)}o_`
         ];
     } else if (type === 1) {
         composition = [
             `.(${"-".repeat(width)})`,
-            `__o${"_".repeat(width)}o_`
+            `__o${"_".repeat(width - 2)}o_`
         ]
     } else if (type === 2) {
         composition = [
-            `.\\${"_".repeat(width)}/`,
-            `__o${"_".repeat(width)}o_`
+            `.${reverseBar}${"_".repeat(width)}/`,
+            `__o${"_".repeat(width - 2)}o_`
         ]
     } else if (type === 3) {
         composition = [
             `.[${"_".repeat(width)}]`,
-            `__o${"_".repeat(width)}o_`
+            `__o${"_".repeat(width - 2)}o_`
         ]
     } else if (type === -1) {
         composition = [
-            `.]@|--Y\_`,
-            "_O___oo_\_"
+            `.]_@|==Y$_`,
+            `_O_____oo_${reverseBar}_`
         ]
     }
 
     return composition;
 }
 /*
-` .[=====].[======].(-----).(------).\\_____/.[_____].]@|--Y\\_    | ${ext?.packageJSON["author"]["email"]}`,
-`___o___o_'__o____o___o___o___o____o___o___o___o___o___O___oo_\\__^______________________________________`,
+` .[=====].[======].(-----).(------).\_____/.[_____].]@|--Y\     | ${ext?.packageJSON["author"]["email"]}`,
+`___o___o___o____o___o___o___o____o___o___o___o___o___O___oo_\__^______________________________________`,
 */

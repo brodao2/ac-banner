@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">7.14% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/14</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">7.14% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/14</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -131,39 +131,39 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-yes">30x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">30x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -184,43 +184,43 @@ Copyright [2024] [Alan Cândido (brodao@gmail.com)]
    See the License for the specific language governing permissions and
    limitations under the License.
 */
+export function getComposition(type: number, width: number): string[] {
+    const reverseBar: string = String.fromCharCode(92); // \
+    let composition: string[] = [];
+    width = width - 2;
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >getComposition(</span>type: number, width: number): string[] {
-    let composition: string[] = <span class="cstat-no" title="statement not covered" >[];</span>
-<span class="cstat-no" title="statement not covered" >    width = width - 2;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    if (type === 0) {</span>
-<span class="cstat-no" title="statement not covered" >        composition = [</span>
+    if (type === 0) {
+        composition = [
             `.[${"=".repeat(width)}]`,
-            `__o${"_".repeat(width)}o_`
+            `__o${"_".repeat(width - 2)}o_`
         ];
-    } else <span class="cstat-no" title="statement not covered" >if (type === 1) {</span>
-<span class="cstat-no" title="statement not covered" >        composition = [</span>
+    } else if (type === 1) {
+        composition = [
             `.(${"-".repeat(width)})`,
-            `__o${"_".repeat(width)}o_`
+            `__o${"_".repeat(width - 2)}o_`
         ]
-    } else <span class="cstat-no" title="statement not covered" >if (type === 2) {</span>
-<span class="cstat-no" title="statement not covered" >        composition = [</span>
-            `.\\${"_".repeat(width)}/`,
-            `__o${"_".repeat(width)}o_`
+    } else if (type === 2) {
+        composition = [
+            `.${reverseBar}${"_".repeat(width)}/`,
+            `__o${"_".repeat(width - 2)}o_`
         ]
-    } else <span class="cstat-no" title="statement not covered" >if (type === 3) {</span>
-<span class="cstat-no" title="statement not covered" >        composition = [</span>
+    } else if (type === 3) {
+        composition = [
             `.[${"_".repeat(width)}]`,
-            `__o${"_".repeat(width)}o_`
+            `__o${"_".repeat(width - 2)}o_`
         ]
-    } else <span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="if path not taken" >I</span>if (type === -1) {</span>
-<span class="cstat-no" title="statement not covered" >        composition = [</span>
-            `.]@|--Y\_`,
-            "_O___oo_\_"
+    } else if (type === -1) {
+        composition = [
+            `.]_@|==Y$_`,
+            `_O_____oo_${reverseBar}_`
         ]
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return composition;</span>
+    return composition;
 }
 /*
-` .[=====].[======].(-----).(------).\\_____/.[_____].]@|--Y\\_    | ${ext?.packageJSON["author"]["email"]}`,
-`___o___o_'__o____o___o___o___o____o___o___o___o___o___O___oo_\\__^______________________________________`,
+` .[=====].[======].(-----).(------).\_____/.[_____].]@|--Y\     | ${ext?.packageJSON["author"]["email"]}`,
+`___o___o___o____o___o___o___o____o___o___o___o___o___O___oo_\__^______________________________________`,
 */
 &nbsp;</pre></td></tr></table></pre>
 
@@ -229,7 +229,7 @@ export function <span class="fstat-no" title="function not covered" >getComposit
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-09-03T03:13:46.520Z
+                at 2024-09-21T17:37:39.826Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

@@ -21,6 +21,7 @@ const config: Config = {
   verbose: true,
   testMatch: ["<rootDir>/tests/**/*.test.ts"],
   testPathIgnorePatterns: ["<rootDir>/dist"],
+  collectCoverage: true,
 };
 
 export default config;

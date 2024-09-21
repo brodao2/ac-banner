@@ -18,7 +18,7 @@ import { buildBanner, TDataBanner } from "../src";
 import { describe, expect, test } from '@jest/globals';
 import { defaultData } from "./data";
 
-describe("AC Banner: test build decorators with train", () => {
+describe("test build decorators with train", () => {
 
   it("...and font alphabet", async () => {
     const data: TDataBanner = defaultData;

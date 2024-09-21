@@ -53,27 +53,18 @@ export function buildBanner(title: string, data: TDataBanner | {}, _options?: TB
   let rightWidth: number = dataBanner.maxLength || 20;
   let lines: string[] = [];
   const middle: string = frame?._middle || "|";
-  const maxLines: number = titleLines.length;
 
-  if (titleLines.length < 6) {
-    lines.push(`${titleLines[0]} ${middle} ${dataBanner.displayName.padEnd(rightWidth, " ")}`);
-    lines.push(`${titleLines[1]} ${middle} ${dataBanner.version.padEnd(rightWidth, " ")}`);
-    lines.push(`${titleLines[2]} ${middle} ${"".padEnd(rightWidth, " ")}`);
-    lines.push(`${titleLines[3]} ${middle} ${dataBanner.authorName.padEnd(rightWidth, " ")}`);
-    lines.push(`${titleLines[4]} ${middle} ${dataBanner.authorEmail.padEnd(rightWidth, " ")}`);
-  } else {
-    lines.push(`${titleLines[0]} ${middle} ${dataBanner.displayName.padEnd(rightWidth, " ")}`);
-    lines.push(`${titleLines[1]} ${middle} ${dataBanner.version.padEnd(rightWidth, " ")}`);
-    lines.push(`${titleLines[2]} ${middle} ${"".padEnd(rightWidth, " ")}`);
-    lines.push(`${titleLines[3]} ${middle} ${"".padEnd(rightWidth, " ")}`);
-    lines.push(`${titleLines[4]} ${middle} ${dataBanner.authorName.padEnd(rightWidth, " ")}`);
-    lines.push(`${titleLines[5]} ${middle} ${dataBanner.authorEmail.padEnd(rightWidth, " ")}`);
-  }
+  lines.push(`${titleLines[0]} ${middle} ${dataBanner.displayName.padEnd(rightWidth, " ")}`);
+  lines.push(`${titleLines[1]} ${middle} ${dataBanner.version.padEnd(rightWidth, " ")}`);
+  lines.push(`${titleLines[2]} ${middle} ${"".padEnd(rightWidth, " ")}`);
+  lines.push(`${titleLines[3]} ${middle} ${dataBanner.authorName.padEnd(rightWidth, " ")}`);
+  lines.push(`${titleLines[4]} ${middle} ${dataBanner.authorEmail.padEnd(rightWidth, " ")}`);
 
-  if (options.train) {
-    lines.push(titleLines[maxLines + 1]);
-    lines.push(titleLines[maxLines + 21]);
-  }
+  titleLines.slice(5).forEach((line: string) => {
+    lines.push(`${line} ${middle} ${" ".padEnd(rightWidth, " ")}`);
+    //lines.push(line);
+  });
+
   if (frame) {
     lines = lines.map((line: string) => {
       return `${frame.left}${line}${frame.right}`;
@@ -97,22 +88,6 @@ export function buildBanner(title: string, data: TDataBanner | {}, _options?: TB
   if (dataBanner.bugs) {
     lines.push(`Issues ...: ${dataBanner.bugs}`);
   }
-
-  /*
-      
-      `----------------------------------------------------------------v--------------------------------------`,
-      `    ___      ___            ___       ___    ____               | ${ext?.packageJSON["displayName"]}`,
-      `   /   \\    / __|    ___    | |      /   \\   | _ )              | Version ${ext?.packageJSON["version"]}`,
-      `   | - |   | (__    |___|   | |__    | - |   | _ <              |                    `,
-      `   |_|_|    \\___|           |____|   |_|_|   |___/  ___         | ${ext?.packageJSON["author"]["name"]}`,
-      ` .[=====].[======].(-----).(------).\\_____/.[_____].]@|--Y\\_    | ${ext?.packageJSON["author"]["email"]}`,
-      `___o___o_'__o____o___o___o___o____o___o___o___o___o___O___oo_\\__^______________________________________`,
-      `${ext?.packageJSON["repository"]["type"]}: ${ext?.packageJSON["repository"]["url"]}`,
-      `issues: ${ext?.packageJSON["bugs"]["url"]}`,
-      ext?.packageJSON["homepage"] !== ext?.packageJSON["repository"]["url"] ? `homepage: ${ext?.packageJSON["homepage"]}` : "",
-      "-------------------------------------------------------------------------------------------------------"
-    ];
-  */
 
   return lines;
 }
