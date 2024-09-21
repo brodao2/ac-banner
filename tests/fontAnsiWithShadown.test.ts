@@ -15,8 +15,7 @@ Copyright [2024] [Alan Cândido (brodao@gmail.com)]
 */
 
 import { buildBanner, TDataBanner } from "../src";
-import { describe, expect, test } from '@jest/globals';
-import { TBuildTitleOptions } from "../src/buildTitle";
+import { describe, expect } from '@jest/globals';
 import { defaultData, defaultWithUrlData } from "./data";
 
 describe("Ansi With Shadow Font", () => {

@@ -21,9 +21,9 @@
     "---RELEASE---": "",
     "release": "npx -y standard-version --skip.changelog --release-as 0.0.2",
     "tag": "git push --follow-tags origin main",
-    "package": "npm package",
+    "publish": "npm run package && npm publish --access public",
+    "package": "npm pack",
     "prepackage": "npm run build",
-    "publish": "npm run package && npm publish --access public --dry-run",
     "---MISC---": "",
     "all-contributors:generate": "npx -y all-contributors generate",
     "all-contributors:check": "npx -y all-contributors check"

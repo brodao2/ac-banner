@@ -15,14 +15,14 @@ Copyright [2024] [Alan Cândido (brodao@gmail.com)]
 */
 
 import { buildBanner, TDataBanner } from "../src";
-import { describe, expect, test } from '@jest/globals';
+import { describe, expect } from '@jest/globals';
 import { defaultData } from "./data";
 
 describe("test build all supported characters in all fonts", () => {
   const fonts: string[] = ["alphabet", "ansi-with-shadow", "bar"];
 
   fonts.forEach((font: string) => {
-    it(`${font}`, async () => {
+    it(font, async () => {
       const data: TDataBanner = defaultData;
       const letters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

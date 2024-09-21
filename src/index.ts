@@ -44,7 +44,7 @@ const defaultOptions: TBuildTitleOptions = {
  * @param options - Optional options for building the title.
  * @returns An array of strings representing the banner.
  */
-export function buildBanner(title: string, data: TDataBanner | {}, _options?: TBuildTitleOptions): string[] {
+export function buildBanner(title: string, data: TDataBanner | Record<string, any>, _options?: TBuildTitleOptions): string[] {
   const dataBanner: TDataBanner = normalizeData(data);
   const options: TBuildTitleOptions = normalizeOptions(_options);
   const frame: TFrameOptions = options.frame as TFrameOptions;
@@ -52,7 +52,7 @@ export function buildBanner(title: string, data: TDataBanner | {}, _options?: TB
   let leftWidth: number = titleLines[0].length;
   let rightWidth: number = dataBanner.maxLength || 20;
   let lines: string[] = [];
-  const middle: string = frame?._middle || "|";
+  const middle: string = frame._middle || "|";
 
   lines.push(`${titleLines[0]} ${middle} ${dataBanner.displayName.padEnd(rightWidth, " ")}`);
   lines.push(`${titleLines[1]} ${middle} ${dataBanner.version.padEnd(rightWidth, " ")}`);
@@ -92,21 +92,21 @@ export function buildBanner(title: string, data: TDataBanner | {}, _options?: TB
   return lines;
 }
 
-function normalizeData(data: TDataBanner | {}): TDataBanner {
+function normalizeData(data: TDataBanner | Record<string, any>): TDataBanner {
   let dataBanner: TDataBanner;
 
   if (data instanceof TDataBanner) {
     dataBanner = data;
   } else {
     dataBanner = {
-      displayName: data["displayName"],
-      version: data["version"],
-      authorName: data["author"]["name"],
-      authorEmail: data["author"]["email"],
-      maxLength: data["maxLength"],
-      repository: data["repository"]["url"] || data["repository"],
-      bugs: data["bugs"]["url"] || data["bugs"],
-      homepage: data["homepage"]["url"] || data["homepage"],
+      displayName: data.displayName,
+      version: data.version,
+      authorName: data.author.name,
+      authorEmail: data.author.email,
+      maxLength: data.maxLength,
+      repository: data.repository.url || data.repository,
+      bugs: data.bugs.url || data.bugs,
+      homepage: data.homepage.url || data.homepage,
     };
   }
 
@@ -128,7 +128,7 @@ function normalizeOptions(options: TBuildTitleOptions): TBuildTitleOptions {
   }
 
   if (typeof options.frame === "boolean") {
-    if (options.frame === true) {
+    if (options.frame) {
       if (options.font !== "ansi-with-shadow") {
         options.frame = {
           _leftTop: "*",

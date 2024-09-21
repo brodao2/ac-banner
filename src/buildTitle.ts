@@ -19,7 +19,7 @@ import { ansiWithShadow } from "./font/ansiWithShadow";
 import { bar } from "./font/bar";
 import { getComposition } from "./font/train";
 
-export type TFrameOptions = {
+export interface TFrameOptions {
     _leftTop: string;
     _top: string;
     _middleTop: string;
@@ -35,7 +35,7 @@ export type TFrameOptions = {
     //middleRight: string;
 }
 
-export type TBuildTitleOptions = {
+export interface TBuildTitleOptions {
     font?: "alphabet" | "ansi-with-shadow" | "bar";
     italic?: boolean;
     background?: string;
@@ -46,14 +46,14 @@ export type TBuildTitleOptions = {
 
 export function buildTitle(title: string, options: TBuildTitleOptions = {}): string[] {
     const font: Record<string, string[]> = getFont(options.font);
-    let lines: string[] = new Array(font["A"].length + (options.train ? 2 : 0)).fill("");
+    let lines: string[] = new Array(font.A.length + (options.train ? 2 : 0)).fill("");
     let compositionType: number = 0;
 
     title = title.toUpperCase() + (options.train ? " " : "");
 
     for (let index = 0; index < title.length; index++) {
         const char: string[] = font[title.at(index)] || font[" "];
-        let widthChar: number = char[0].length;
+        const widthChar: number = char[0].length;
         let centerSpc: string = "";
 
         if (options.train) {
@@ -79,7 +79,7 @@ export function buildTitle(title: string, options: TBuildTitleOptions = {}): str
     }
 
     if (options.italic) {
-        let spc: string[] = new Array(lines.length).fill("");
+        const spc: string[] = new Array(lines.length).fill("");
         spc.forEach((part: string, index: number) => {
             spc[index] = " ".repeat(lines.length - index - 1);
         });
@@ -102,7 +102,7 @@ export function buildTitle(title: string, options: TBuildTitleOptions = {}): str
 }
 
 function getFont(fontName: string): Record<string, string[]> {
-    let data: {};
+    let data: Record<string, string[]>;
 
     if (fontName == "alphabet") {
         data = buildFont(alphabet(), 6);
@@ -119,11 +119,11 @@ function getFont(fontName: string): Record<string, string[]> {
 
 function buildFont(data: string, heightFont: number): Record<string, string[]> {
     let lines: string[] = data.split("\n").slice(1, heightFont + 1);
-    let symbols: string[] = [];
-    let result: Record<string, string[]> = {};
+    const symbols: string[] = [];
+    const result: Record<string, string[]> = {};
     let spaceWidth: number = 0;
 
-    lines[0].split("|").forEach((part: string, index: number) => {
+    lines[0].split("|").forEach((part: string) => {
         part = part.trim();
         if (part.length !== 0) {
             symbols.push(part.trim());
