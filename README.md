@@ -27,7 +27,7 @@ Crie faixas de arte ASCII para uso em aplicativos CLI ou extensões VS-Code.
 ## Instalação
 
 ```console
-npm install ac-banner
+npm install @aclab/ac-banner
 ```
 
 ## Uso com classe de dados

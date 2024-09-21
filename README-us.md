@@ -27,7 +27,7 @@ Create ASCII art banners for use in CLI applications or VS-Code extensions.
 ## Installation
 
 ```console
-npm install ac-banner
+npm install @aclab/ac-banner
 ```
 
 ## Usage with data class
